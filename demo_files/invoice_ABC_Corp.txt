@@ -1,0 +1,17 @@
+Invoice #INV-2026-001
+================================
+Client:    ABC Corporation
+Date:      2026-02-20
+Due Date:  2026-03-05
+
+Services:
+- Web Development Phase 1       Rs 30,000
+- UI/UX Design                  Rs 15,000
+- Project Management            Rs  5,000
+                               ----------
+TOTAL:                          Rs 50,000
+
+Payment Method: Bank Transfer
+Account: HDFC Bank XXXX-1234
+
+Thank you for your business!

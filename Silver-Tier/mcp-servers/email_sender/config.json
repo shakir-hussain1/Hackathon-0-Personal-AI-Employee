@@ -1,0 +1,13 @@
+{
+  "server_name": "email_sender",
+  "version": "1.0.0",
+  "description": "Gmail email sender with human-in-the-loop approval",
+  "host": "localhost",
+  "port": 8090,
+  "vault_path": "..\..\Common\AI_Employee_Vault",
+  "approval_required": true,
+  "approved_dir": "..\..\Common\AI_Employee_Vault\Approved",
+  "drafts_dir": "..\..\Common\AI_Employee_Vault\Plans\email_drafts",
+  "check_interval_seconds": 300,
+  "max_emails_per_hour": 20
+}

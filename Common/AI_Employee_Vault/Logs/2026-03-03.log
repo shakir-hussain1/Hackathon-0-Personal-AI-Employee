@@ -1,0 +1,306 @@
+[2026-03-03 01:18:19] [SILVER_ORCHESTRATOR] Silver Orchestrator started
+[2026-03-03 01:18:25] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 01:18:25] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-03-03 01:18:31] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYesWTYHTNBJRriEFqdVW'}
+[2026-03-03 01:18:32] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYesWYqX19XmQcpthLxgS'}
+[2026-03-03 01:18:39] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'Internal server error'}, 'request_id': 'req_011CYesWe4JKYk6ZQx2eyYPH'}
+[2026-03-03 01:18:39] [LINKEDIN_WATCHER] Post suggestion queued for: FILE_Invoice-ERKOVY1C-0001_20260216_171714.md
+[2026-03-03 01:18:39] [LINKEDIN_WATCHER] Post suggestion queued for: FILE_invoice_ABC_Corp_20260220_200710.md
+[2026-03-03 01:18:39] [LINKEDIN_WATCHER] Post suggestion queued for: FILE_invoice_ABC_Feb2026_20260219_174322.md
+[2026-03-03 01:18:39] [LINKEDIN_WATCHER] Post suggestion queued for: FILE_meeting_notes_client_xyz_20260219_174322.md
+[2026-03-03 01:18:39] [LINKEDIN_WATCHER] Post suggestion queued for: LINKEDIN_POST_FILE_demo_meeting_notes_202602_20260219_010721.md
+[2026-03-03 01:18:39] [LINKEDIN_WATCHER] Post suggestion queued for: LINKEDIN_POST_meeting_notes_client_xyz_20260220_200707.md
+[2026-03-03 01:18:39] [LINKEDIN_WATCHER] Post suggestion queued for: LINKEDIN_POST_project_milestone_feb2026_20260219_151516.md
+[2026-03-03 01:18:39] [LINKEDIN_WATCHER] Post suggestion queued for: meeting_notes_client_xyz.md
+[2026-03-03 01:18:39] [LINKEDIN_WATCHER] Post suggestion queued for: meeting_notes_client_xyz_20260220.md
+[2026-03-03 01:33:39] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 09:49:18] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYTaFokDbMENALFCgaa'}
+[2026-03-03 09:49:19] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYTitibCCvdHuY2jLd1'}
+[2026-03-03 09:49:21] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYTqMuNV9E31nRGuoCL'}
+[2026-03-03 09:49:22] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYTwWzDxVVZBtF5SrKr'}
+[2026-03-03 09:49:24] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYU5buiD5shb5Xe2Gze'}
+[2026-03-03 09:49:26] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUF6Qt8N8d75YWnshq'}
+[2026-03-03 09:49:29] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUR3wzDKTWij5ciDTQ'}
+[2026-03-03 09:49:31] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUYGXhb2S1RiXiTnF7'}
+[2026-03-03 09:49:32] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUg9ny5i8uK49Vg265'}
+[2026-03-03 09:49:34] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUou85XaBsYPzTeNRB'}
+[2026-03-03 09:49:36] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUwhRp22jFBAAuUopG'}
+[2026-03-03 09:49:38] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYV7SZqwDg7ktm7qcXr'}
+[2026-03-03 09:49:39] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 09:49:39] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-03-03 10:04:39] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 13:18:58] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpT3SX5v86Z2rHentXq'}
+[2026-03-03 13:18:59] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpT6wMyNjD27wNSH7mD'}
+[2026-03-03 13:19:00] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTAhpvdaccW1XeRQpG'}
+[2026-03-03 13:19:01] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTE7xMD9ZTFpXtpwLW'}
+[2026-03-03 13:19:02] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTHgGk2RcQWUbdKAfD'}
+[2026-03-03 13:19:03] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTM8dhq6JJpdXiMmaQ'}
+[2026-03-03 13:19:04] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTQghqHHzZ2juQoAvq'}
+[2026-03-03 13:19:04] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTUYNkx3uzUT6njMdc'}
+[2026-03-03 13:19:06] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTcdnpfA6DpUxFLRRS'}
+[2026-03-03 13:19:08] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTkLPwM8q5jF7fANQU'}
+[2026-03-03 13:19:09] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTotxfjLUNEQUH1rCi'}
+[2026-03-03 13:19:10] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTsRHfgiKcYPY1KNX6'}
+[2026-03-03 13:19:10] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 13:19:10] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-03-03 13:34:10] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 14:23:37] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuNwdVXBeb5j6ekRv1E'}
+[2026-03-03 14:23:38] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuP1FGvRi8wV15dag8U'}
+[2026-03-03 14:23:39] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuP5DQ4LWRrxz3jfrMY'}
+[2026-03-03 14:23:40] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuP8dH9817tZJ5nzenw'}
+[2026-03-03 14:23:41] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPCD5rXZ34J44J1MqS'}
+[2026-03-03 14:23:41] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPFdxXRTXXAyWdfW6T'}
+[2026-03-03 14:23:42] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPKBXkAQi9BQSbRuC5'}
+[2026-03-03 14:23:43] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPNhNCiKa3rqkTqTvA'}
+[2026-03-03 14:23:44] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPSJev6q33ToQ9dybu'}
+[2026-03-03 14:23:45] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPVokRLpmaeTMgW6T7'}
+[2026-03-03 14:23:46] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPZhA56dani83KTmBp'}
+[2026-03-03 14:23:47] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPdRtc2uywpJK5VmCT'}
+[2026-03-03 14:23:47] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 14:23:47] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-03-03 14:38:47] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 14:53:48] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwgSfhJyCsfNK3vq86p'}
+[2026-03-03 14:53:50] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwgYJX6DgYXNKhqd5Rb'}
+[2026-03-03 14:53:51] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwge5nH751SThw5KkZY'}
+[2026-03-03 14:53:52] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwgjzEqJYzgmzqBDfKb'}
+[2026-03-03 14:53:54] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwgqhHaZgkYfKJFAxAJ'}
+[2026-03-03 14:53:56] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwgzdJdZcyg9q3QUjE5'}
+[2026-03-03 14:53:57] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwh6CAhDjRfkNCPRVH1'}
+[2026-03-03 14:53:58] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwhBf5YDK9emScQWPVD'}
+[2026-03-03 14:53:59] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwhH3H56QQTSE6NXDHj'}
+[2026-03-03 14:54:01] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwhNREe8xoMsviZHpz6'}
+[2026-03-03 14:54:02] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwhTbHZ5qas362Hw6nm'}
+[2026-03-03 14:54:03] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwhYtH7hjCLx1ghFCcn'}
+[2026-03-03 14:54:03] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 15:06:57] [INFO] [WhatsAppWatcher] Started with 60s check interval
+[2026-03-03 15:06:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:07:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:08:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:09:03] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 15:09:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:10:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:11:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:12:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:13:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:14:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:15:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:16:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:17:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:18:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:19:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:20:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:21:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:22:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:23:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:24:04] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-03-03 15:24:05] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfyzPVgWfBHR1QDz9bPf'}
+[2026-03-03 15:24:07] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfyzY7M4mE7u8mqUxrp7'}
+[2026-03-03 15:24:09] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfyzeByKisor9NsZ8aAY'}
+[2026-03-03 15:24:10] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfyzmTGxNW6cYt9jWtpt'}
+[2026-03-03 15:24:12] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfyzuMneb93cpQ2Wzj6G'}
+[2026-03-03 15:24:14] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz11mzjXBfV68NjkeBL'}
+[2026-03-03 15:24:15] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz17WmsXNdTGp7YApnc'}
+[2026-03-03 15:24:16] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz1D97bb9snTUHmKToo'}
+[2026-03-03 15:24:18] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz1K1aTxe5t5zfHXrrN'}
+[2026-03-03 15:24:19] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz1Q3Sr6hScE7Mpa2HM'}
+[2026-03-03 15:24:20] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz1VPuhJxEZuhAbXXxd'}
+[2026-03-03 15:24:21] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz1anMw46JsGBvNKMbB'}
+[2026-03-03 15:24:22] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 15:24:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:25:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:26:57] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:27:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:28:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:29:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:30:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:31:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:32:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:33:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:34:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:35:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:36:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:37:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:38:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:39:22] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 15:39:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:40:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:41:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:42:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:43:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:44:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:45:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:46:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:47:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:48:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:49:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:50:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:51:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:52:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:53:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:54:23] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JQ5PNSLpAChNqvKDJ'}
+[2026-03-03 15:54:24] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JTD9wv8yKFhDkqt7L'}
+[2026-03-03 15:54:25] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JWaZZkRepWU2rNuTg'}
+[2026-03-03 15:54:25] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JZmo6aEagt5SnUFRG'}
+[2026-03-03 15:54:26] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2Jd4jnkerN2GA28AkN'}
+[2026-03-03 15:54:27] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2Jg7YYF4RTzaEYkTBK'}
+[2026-03-03 15:54:28] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JjCadeNztj4UxAYLM'}
+[2026-03-03 15:54:28] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JnHsMCU438e2YRxJq'}
+[2026-03-03 15:54:29] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JqLRVmG8P1czgqQEe'}
+[2026-03-03 15:54:30] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2Jta9D8kXqeY2waxmn'}
+[2026-03-03 15:54:31] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2Jwx3TVRhmux5C8JrP'}
+[2026-03-03 15:54:31] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2K135NgbDzXtju3e2C'}
+[2026-03-03 15:54:31] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 15:54:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:55:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:56:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:57:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:58:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 15:59:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:00:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:01:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:02:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:03:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:04:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:05:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:06:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:07:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:08:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:09:32] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 16:09:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:10:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:11:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:12:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:13:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:14:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:15:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:16:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:17:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:18:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:19:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:20:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:21:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:22:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:23:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:24:32] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-03-03 16:24:33] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4bqZGnsJAirQFm8fnT'}
+[2026-03-03 16:24:34] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4btrTkZ1p4EhNQPQjZ'}
+[2026-03-03 16:24:35] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4bww1WckiyrbAkTKLi'}
+[2026-03-03 16:24:35] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4c1BDWYogT2eXCtyg6'}
+[2026-03-03 16:24:36] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4c4F28fQLaCRrgsoy9'}
+[2026-03-03 16:24:37] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4c7UV6sL1sH85TFLkF'}
+[2026-03-03 16:24:38] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cAdk5DMzrmDBkc8Bz'}
+[2026-03-03 16:24:38] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cDoVZFmnYd7ZoHAw5'}
+[2026-03-03 16:24:39] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cGwznWLTpYotBWLEq'}
+[2026-03-03 16:24:40] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cL42RJjAs6hrejWML'}
+[2026-03-03 16:24:41] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cPA4CpxEKpKz7jt13'}
+[2026-03-03 16:24:41] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cSVUvQB3YzuBKTgPL'}
+[2026-03-03 16:24:41] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 16:24:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:25:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:26:58] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:27:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:28:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:29:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:30:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:31:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:32:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:33:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:34:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:35:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:36:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:37:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:38:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:39:42] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 16:39:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:40:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:41:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:42:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:43:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:44:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:45:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:46:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:47:59] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:50:38] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:51:38] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:52:38] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:53:38] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:54:38] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:55:25] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6xGzWvyf1NbkN68D6x'}
+[2026-03-03 16:55:27] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6xS7T1RvaRkyiJEBJh'}
+[2026-03-03 16:55:29] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6xbFcxYTHKEgEZDYyC'}
+[2026-03-03 16:55:31] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6xk9fBGPQd3Fo7CyWK'}
+[2026-03-03 16:55:33] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6xuDrwvqhuxvA2ywVH'}
+[2026-03-03 16:55:35] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6y3vjd2ZCe4dDXVeXT'}
+[2026-03-03 16:55:37] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yCeMj7EbkpY2yxPqP'}
+[2026-03-03 16:55:38] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:55:39] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yMcMbXVqdenZNiCKa'}
+[2026-03-03 16:55:41] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yW1sp418eYwDVUQCd'}
+[2026-03-03 16:55:44] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yetBHAECFoYSQuz72'}
+[2026-03-03 16:55:46] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yonxe5xP88wymT7zV'}
+[2026-03-03 16:55:48] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yxU6UBkUAzrNPsNJo'}
+[2026-03-03 16:55:49] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 16:56:38] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:57:38] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 16:58:38] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:48:07] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:48:18] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 19:48:18] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-03-03 19:48:19] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL8zsyRXPCvV1HzKjnQ'}
+[2026-03-03 19:48:20] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL94C9jCsSDE6FVYCPu'}
+[2026-03-03 19:48:20] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL98DjynnTiDAZnxZsR'}
+[2026-03-03 19:48:21] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9CcASy8KGL316tyFE'}
+[2026-03-03 19:48:23] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9KNi2DpRNqPi8aPCT'}
+[2026-03-03 19:48:24] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9P4iU6KHzZx3AL4iG'}
+[2026-03-03 19:48:25] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9SfGEewnSSNnLAnEn'}
+[2026-03-03 19:48:26] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9WCq6GzsuDFA5uXVm'}
+[2026-03-03 19:48:26] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9Zmdz197cvTmErih5'}
+[2026-03-03 19:48:27] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9d5KiJbBmYojXQcig'}
+[2026-03-03 19:48:29] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9jhw3sVnvNKLKDV9n'}
+[2026-03-03 19:48:30] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9riN4g1V8HuTPCHPx'}
+[2026-03-03 19:48:30] [SILVER_ORCHESTRATOR] Daily report trigger
+[2026-03-03 19:49:07] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:50:07] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:51:07] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:52:07] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:53:07] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:54:07] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:55:07] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:56:07] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:57:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:58:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 19:59:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:00:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:01:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:02:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:03:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:03:31] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 20:04:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:05:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:06:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:07:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:08:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:09:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:10:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:11:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:12:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:13:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:14:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:15:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:16:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:17:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:18:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:18:32] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNShRUXUU9eAWepp1MQ'}
+[2026-03-03 20:18:34] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNSq7LRMKcVbwm9kBM9'}
+[2026-03-03 20:18:36] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNSvdULefsYXqnkJTRi'}
+[2026-03-03 20:18:37] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNT1zg5JQ8dyyEGhKYj'}
+[2026-03-03 20:18:38] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNT7gVF9fKYjz1wvu51'}
+[2026-03-03 20:18:40] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTDEc4E3xh581DgYxD'}
+[2026-03-03 20:18:41] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTK375qJqJEqccZn4n'}
+[2026-03-03 20:18:42] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTQqrS4J46NzB22akY'}
+[2026-03-03 20:18:44] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTWjoxvRwHm4iMuUaN'}
+[2026-03-03 20:18:45] [REASONING_LOOP] ERROR planning LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTcuPg3EfktC8Akgqb'}
+[2026-03-03 20:18:46] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTiMZTVi8LnqDZH8Uw'}
+[2026-03-03 20:18:48] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNToztGyHE1bFh2EfV7'}
+[2026-03-03 20:18:48] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-03-03 20:19:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium
+[2026-03-03 20:20:08] [ERROR] [WhatsAppWatcher] playwright not installed — run: pip install playwright && playwright install chromium

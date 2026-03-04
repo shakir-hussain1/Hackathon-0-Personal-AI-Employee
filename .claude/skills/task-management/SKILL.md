@@ -1,0 +1,706 @@
+# Task Management Skill
+
+**Purpose**: Create, track, prioritize, update, and close tasks across their full lifecycle
+**Storage**: Markdown-based task files in Needs_Action/, Done/, and Plans/
+**Scope**: Task creation, status tracking, prioritization, dependency management, due dates, completion, archival
+
+---
+
+## Core Functions
+
+### 1. Create Tasks
+Generate structured task files from incoming files, emails, or instructions
+
+### 2. Prioritize
+Order tasks by urgency, importance, and dependency
+
+### 3. Track Status
+Know exactly where every task is in its lifecycle
+
+### 4. Manage Dependencies
+Prevent tasks from starting before their blockers are resolved
+
+### 5. Update Tasks
+Record progress, decisions, and changes throughout the task lifecycle
+
+### 6. Close and Archive
+Mark tasks complete, move to Done/, archive on schedule
+
+---
+
+## Task Lifecycle
+
+```
+CREATED → QUEUED → IN_PROGRESS → REVIEW → COMPLETED → ARCHIVED
+
+States:
+  CREATED      → Task file written, not yet queued
+  QUEUED       → In Needs_Action/, waiting to be processed
+  IN_PROGRESS  → Actively being worked on (AI or human)
+  BLOCKED      → Cannot proceed — waiting for dependency or input
+  REVIEW       → Work done, waiting for human review/approval
+  COMPLETED    → All steps done, result accepted
+  CANCELLED    → No longer needed (documented why)
+  ARCHIVED     → Moved from Done/ to Archive/
+
+Transitions:
+  CREATED    → QUEUED       : Task added to Needs_Action/
+  QUEUED     → IN_PROGRESS  : AI or human claims the task
+  IN_PROGRESS→ BLOCKED      : Dependency or input needed
+  BLOCKED    → IN_PROGRESS  : Blocker resolved
+  IN_PROGRESS→ REVIEW       : AI finished, human must check
+  REVIEW     → COMPLETED    : Human approves
+  REVIEW     → IN_PROGRESS  : Human requests changes
+  COMPLETED  → ARCHIVED     : Scheduled archival (90 days)
+  ANY        → CANCELLED    : Human decides not needed
+```
+
+---
+
+## Task File Format
+
+### Standard Task File
+
+```markdown
+# Task: {title}
+
+**ID**: TASK-20260216-014
+**Created**: 2026-02-16 09:15
+**Updated**: 2026-02-16 09:20
+**Status**: QUEUED
+**Priority**: HIGH
+**Due**: 2026-02-16 EOD
+**Owner**: AI_EMPLOYEE
+**Requested by**: Alice Johnson (alice@company.com)
+**Category**: document
+**Tags**: #q1 #finance #report #alice
+
+---
+
+## Source
+
+**File**: Inbox/report_q1.pdf
+**Received**: 2026-02-16 09:00
+**File size**: 2.3 MB
+**File type**: PDF document
+
+---
+
+## Summary
+
+Q1 Financial Report from Alice Johnson.
+Key content: Revenue (+12% YoY), Expenses (+8% YoY), 3 action items.
+
+---
+
+## Action Required
+
+- [ ] Review revenue figures against Q4 baseline
+- [ ] Identify the 3 flagged action items
+- [ ] Draft response acknowledging receipt
+- [ ] Flag budget reallocation item for human decision
+
+---
+
+## Dependencies
+
+- Blocks: TASK-20260216-015 (response email, depends on this review)
+- Blocked by: None
+
+---
+
+## Progress Log
+
+| Time     | Actor       | Update                                    |
+|----------|-------------|-------------------------------------------|
+| 09:15    | AI          | Task created from Inbox/report_q1.pdf     |
+| 09:20    | AI          | Summary written, action items identified  |
+
+---
+
+## Output
+
+**Summary file**: Plans/collaboration/active/COLLAB_003_summary.md
+**Draft response**: Plans/email_drafts/DRAFT_alice_q1_response.md
+**Moved to**: Done/report_q1.pdf
+
+---
+
+## Completion
+
+**Completed**: 2026-02-16 11:00
+**Completed by**: Human (approved AI summary, sent response)
+**Result**: Q1 report reviewed, 3 action items logged, response sent
+**Outcome**: SUCCESS
+```
+
+---
+
+## Task Creation Rules
+
+### Auto-Create Task When
+
+```
+File arrives in Inbox/:
+  → Create task immediately
+  → ID format: TASK-YYYYMMDD-{sequence}
+  → Set status = CREATED → QUEUED
+  → Determine priority (Decision Skill)
+  → Identify category (file-understanding)
+  → Write task file to Needs_Action/
+
+Human gives explicit instruction:
+  → Parse instruction into task
+  → Create task with source = human_instruction
+  → Set priority as specified or infer from tone
+  → Confirm task created (tell human the task ID)
+
+Scheduler triggers recurring task:
+  → Create task with source = scheduled
+  → Link to schedule entry (SCH-XXX)
+  → Set priority per schedule definition
+
+Self-healing detects issue:
+  → Create task with source = self_healing
+  → Priority = HIGH or CRITICAL
+  → Owner = AI (auto-handle) or HUMAN (if escalated)
+
+Analytics detects needed action:
+  → Create task with source = analytics_insight
+  → Priority = MEDIUM (unless forecast shows urgency)
+  → Owner = AI (research) or HUMAN (decision needed)
+```
+
+### Task ID Format
+
+```
+Format: TASK-{YYYYMMDD}-{sequence}
+Example: TASK-20260216-014
+
+Sequence:
+  Starts at 001 each day
+  Resets at midnight
+  Padded to 3 digits (001, 002 ... 099, 100)
+
+Special prefixes:
+  TASK-  → Standard task (file-based)
+  HT-    → Human Task (requires human action)
+  SCH-   → Scheduled task (auto-generated by scheduler)
+  INC-   → Incident task (from self-healing)
+  ANL-   → Analytics insight task
+```
+
+---
+
+## Priority System
+
+### Priority Levels
+
+```
+CRITICAL
+  Definition: System-threatening, requires immediate action
+  Response:   Within 15 minutes
+  Examples:   Vault corruption, security breach, disk full >95%
+  Auto-assign: Self-healing, Security skill alerts
+  Color:      RED
+
+HIGH
+  Definition: Important, time-sensitive, needs same-day attention
+  Response:   Within 4 hours
+  Examples:   Files from priority senders, urgent deadlines, HIGH alerts
+  Auto-assign: Known HIGH senders, urgent keywords in content
+  Color:      ORANGE
+
+MEDIUM
+  Definition: Important but not urgent, next available slot
+  Response:   Within 24 hours
+  Examples:   Regular files, standard reports, scheduled tasks
+  Auto-assign: Default for known senders without priority rule
+  Color:      YELLOW
+
+LOW
+  Definition: Nice to have, defer when busy
+  Response:   Within 72 hours
+  Examples:   FYI files, maintenance tasks, optional reviews
+  Auto-assign: Small files, no action keywords, known low-priority senders
+  Color:      GREY
+```
+
+### Priority Assignment Logic
+
+```
+Step 1: Check for CRITICAL signals
+  Disk > 95%, security event, system crash → CRITICAL
+
+Step 2: Check known sender rules
+  IF sender in HIGH_PRIORITY list → HIGH (override)
+  IF RULE-XXX applies → apply rule priority
+
+Step 3: Check content signals
+  Keywords: urgent, deadline, ASAP, critical, immediate → HIGH
+  Keywords: FYI, when you can, no rush → LOW
+  Keywords: invoice, payment, contract → HIGH (financial)
+
+Step 4: Check file type signals
+  .exe, suspicious → QUARANTINE (not a priority, a security event)
+  .pdf from known sender → use sender's default priority
+  .csv data file → MEDIUM (data, not urgent)
+
+Step 5: Check time signals
+  After business hours from known HIGH sender → HIGH (sent it urgently)
+  Weekend file from unknown → LOW (probably not urgent)
+
+Step 6: Apply default
+  No signals matched → MEDIUM
+
+Step 7: Allow human override
+  Human can change priority at any time → update task + log change
+```
+
+---
+
+## Queue Management
+
+### Queue File
+
+```
+Location: Common/AI_Employee_Vault/Plans/task_queue.md
+
+Format:
+# Task Queue
+
+**Updated**: 2026-02-16 14:30
+**Queue depth**: 5 tasks
+**Processing**: TASK-20260216-012
+
+---
+
+## Now Processing
+| Task ID            | Title                    | Priority | Owner    | Since |
+|--------------------|--------------------------|----------|----------|-------|
+| TASK-20260216-012  | Analyze invoice.pdf      | HIGH     | AI       | 14:28 |
+
+---
+
+## Waiting (Priority Order)
+| Pos | Task ID           | Title                  | Priority | Age    | Blocked? |
+|-----|-------------------|------------------------|----------|--------|----------|
+| 1   | TASK-20260216-014 | Q1 report review       | HIGH     | 5h     | No       |
+| 2   | HT-20260216-003   | Approve email to Alice | HIGH     | 2h     | No       |
+| 3   | TASK-20260216-011 | Weekly archive run     | LOW      | 6h     | No       |
+| 4   | TASK-20260216-009 | Compress Feb logs      | LOW      | 8h     | No       |
+| 5   | TASK-20260216-015 | Draft Alice response   | MEDIUM   | 5h     | Yes (014)|
+
+---
+
+## Blocked Tasks
+| Task ID           | Blocked by        | Waiting for              | Since |
+|-------------------|-------------------|--------------------------|-------|
+| TASK-20260216-015 | TASK-20260216-014 | Q1 report review done    | 09:15 |
+```
+
+### Queue Ordering Rules
+
+```
+Primary sort:   Priority (CRITICAL > HIGH > MEDIUM > LOW)
+Secondary sort: Age (older tasks of same priority go first)
+Tertiary sort:  Dependency order (blocking tasks before blocked)
+
+Special rules:
+  BLOCKED tasks stay in queue but skip in processing order
+  HUMAN tasks (HT-) float to top of their priority bucket
+  Scheduled tasks (SCH-) process at their specified time (not by age)
+  CRITICAL tasks jump to front regardless of secondary/tertiary order
+
+Queue health:
+  Depth > 20  → WARNING: queue growing faster than processing
+  Depth > 50  → CRITICAL: intake pause recommended
+  CRITICAL tasks waiting > 15 min → escalate immediately
+  HIGH tasks waiting > 4 hours → alert human
+  Any task waiting > 72 hours → flag as STALE
+```
+
+---
+
+## Dependency Management
+
+### Dependency Types
+
+```
+BLOCKS:
+  This task must complete before another can start
+  Example: "Review report" BLOCKS "Send response"
+
+BLOCKED_BY:
+  This task cannot start until another is done
+  Example: "Send response" BLOCKED_BY "Review report"
+
+RELATED:
+  Tasks are connected but neither blocks the other
+  Example: Two invoices from same vendor (related, not blocking)
+
+REQUIRES_APPROVAL:
+  Task cannot proceed until an approval is granted
+  Example: Task REQUIRES_APPROVAL from Approval Handling Skill
+```
+
+### Dependency Enforcement
+
+```
+Before claiming any task:
+  1. Check BLOCKED_BY list
+  2. Verify each blocker task status
+  3. IF any blocker is not COMPLETED → cannot start this task
+  4. Keep task in BLOCKED state
+  5. Monitor blockers — resume this task when all clear
+
+When a task completes:
+  1. Check if this task BLOCKS any other tasks
+  2. For each blocked task: check if all its blockers now resolved
+  3. IF all blockers resolved → update blocked task to QUEUED
+  4. Notify if blocked task was waiting a long time
+
+Circular dependency detection:
+  IF Task A blocks Task B AND Task B blocks Task A → ERROR
+  Log: "[TASK] Circular dependency: TASK-A ↔ TASK-B"
+  Alert: Human must resolve manually
+  Action: Mark both as BLOCKED, create HT- task for human to fix
+```
+
+---
+
+## Task Updates
+
+### What Triggers an Update
+
+```
+Always update task file when:
+  - Status changes (any transition)
+  - Owner changes (claimed or reassigned)
+  - Priority changes (human override or new information)
+  - Progress made (step completed, output produced)
+  - Blocker added or resolved
+  - Due date changes
+  - Human adds a note or instruction
+
+Update format — add to Progress Log:
+  | {timestamp} | {actor} | {what changed and why} |
+
+Example updates:
+  | 14:30 | AI     | Status: QUEUED → IN_PROGRESS (claimed for processing) |
+  | 14:35 | AI     | Summary extracted, 3 action items identified           |
+  | 14:45 | Human  | Priority changed: MEDIUM → HIGH (called out as urgent) |
+  | 15:00 | Human  | Status: IN_PROGRESS → REVIEW (approved summary)        |
+  | 15:05 | AI     | Status: REVIEW → COMPLETED (human approved)            |
+```
+
+---
+
+## Due Date Management
+
+### Due Date Rules
+
+```
+Auto-assign due dates:
+  CRITICAL tasks:    Due in 15 minutes
+  HIGH tasks:        Due in 4 hours (or EOD if received AM)
+  MEDIUM tasks:      Due in 24 hours
+  LOW tasks:         Due in 72 hours
+  Scheduled tasks:   Due at schedule time
+  Human tasks (HT-): Due = expiry time from Approval Handling
+
+Override due dates:
+  IF content contains specific date → use that date
+  IF human specifies deadline → use human's deadline
+  IF file is time-stamped near deadline → infer urgency
+
+Due date alerts:
+  50% of time remaining → INFO log entry
+  25% of time remaining → WARNING notification
+  10% of time remaining → HIGH notification
+  Past due            → CRITICAL alert, escalate immediately
+```
+
+### Overdue Task Handling
+
+```
+When task passes due date:
+  1. Mark task as OVERDUE in status field
+  2. Move to top of queue (ahead of same priority)
+  3. Send HIGH notification: "Task {ID} is overdue: {title}"
+  4. If still not completed after 2x due time → CRITICAL alert
+  5. If blocked by human → re-notify human immediately
+
+Overdue thresholds:
+  CRITICAL overdue by > 15 min → escalate now
+  HIGH overdue by > 2 hours → alert + reassign if AI task
+  MEDIUM overdue by > 12 hours → alert human
+  LOW overdue by > 48 hours → alert human
+```
+
+---
+
+## Task Completion
+
+### Completion Checklist
+
+```
+Before marking COMPLETED:
+
+Content:
+  [ ] All action items in task file checked off
+  [ ] Output files created and linked in task file
+  [ ] Source file moved to Done/
+  [ ] Summary written (for document tasks)
+
+Quality:
+  [ ] Human reviewed if task type requires it
+  [ ] No open questions or unresolved items
+  [ ] Dependent tasks unblocked (if this was a blocker)
+
+Records:
+  [ ] Progress log up to date
+  [ ] Completion time recorded
+  [ ] Outcome noted (SUCCESS / PARTIAL / ESCALATED)
+  [ ] Lessons captured (if any)
+
+Notifications:
+  [ ] Human notified if they were waiting
+  [ ] Blocked tasks notified they can proceed
+  [ ] Dashboard updated
+```
+
+### Completion Record
+
+```
+Add to task file on completion:
+
+## Completion
+
+**Completed**: 2026-02-16 11:00
+**Completed by**: {AI_EMPLOYEE | Human | {name}}
+**Duration**: 1 hour 45 minutes (created 09:15 → completed 11:00)
+**Outcome**: SUCCESS | PARTIAL | CANCELLED | ESCALATED
+**Result**: {1-2 sentence summary of what was achieved}
+**Output**: {link to output files if any}
+**Lessons**: {any notable learning from this task}
+**Follow-up tasks**: {TASK-IDs if new tasks were spawned}
+```
+
+---
+
+## Task Metrics
+
+### Per Task Metrics
+```
+Time to start:       Time from CREATED to IN_PROGRESS
+Processing time:     Time from IN_PROGRESS to COMPLETED
+Total cycle time:    Time from CREATED to COMPLETED
+Human touch time:    Time task spent in REVIEW or BLOCKED (human)
+Queue wait time:     Time in QUEUED before IN_PROGRESS
+```
+
+### Aggregate Metrics (Weekly)
+```
+Tasks created:          {n}
+Tasks completed:        {n}
+Tasks cancelled:        {n}
+Tasks still open:       {n}
+Avg cycle time:         {hours}
+Avg processing time:    {minutes}
+On-time completion:     {%} (completed before due date)
+Overdue tasks:          {n}
+Tasks requiring human:  {%}
+```
+
+---
+
+## Task Search and Filter
+
+### Search Capabilities
+
+```
+By status:
+  Show all IN_PROGRESS tasks
+  Show all BLOCKED tasks
+  Show all OVERDUE tasks
+
+By priority:
+  Show all CRITICAL tasks
+  Show all HIGH tasks due today
+
+By owner:
+  Show all tasks owned by HUMAN
+  Show all AI-owned tasks
+
+By age:
+  Show tasks older than 24 hours
+  Show tasks created today
+
+By tag:
+  Show all #alice tasks
+  Show all #finance tasks
+  Show all #invoice tasks
+
+By dependency:
+  Show all tasks blocked by TASK-XXX
+  Show tasks that block no others (can be done in any order)
+
+Combined:
+  Show all HIGH tasks owned by HUMAN older than 4 hours
+  Show all BLOCKED tasks where blocker is COMPLETED
+```
+
+---
+
+## Integration with Other Skills
+
+### With Workflow Skill
+```
+workflow → creates tasks via → task-management at:
+  Each workflow step (creates subtask for tracking)
+  Human handoff points (creates HT- task)
+  Rollback events (creates recovery task)
+```
+
+### With Scheduler Skill
+```
+scheduler → uses → task-management to:
+  Create SCH- tasks at scheduled times
+  Track recurring task completion history
+  Detect missed tasks (schedule ran, no task created)
+```
+
+### With Decision Skill
+```
+decision → uses → task-management to:
+  Set priority on new tasks
+  Determine queue position
+  Route blocked tasks for human resolution
+```
+
+### With Delegation Skill
+```
+delegation → uses → task-management to:
+  Assign owner on tasks (claim/release)
+  Track handoff state within task file
+  Update task when delegation completes
+```
+
+### With Notification Skill
+```
+task-management → triggers → notification for:
+  Task created (INFO, suppressed for routine)
+  Task overdue (HIGH)
+  Task stuck in REVIEW > 4 hours (WARNING)
+  Task blocked by human > 24 hours (HIGH)
+  Task COMPLETED (INFO, suppressed if routine)
+```
+
+### With Reporting Skill
+```
+reporting → reads from → task-management:
+  Task counts by status, priority, category
+  Completion rates and cycle times
+  Overdue task history
+  Task volume trends
+```
+
+### With Context Skill
+```
+context → reads → task-management data:
+  Recent tasks for the same entity (interaction history)
+  Open tasks related to current context (dependencies)
+  Task patterns for entity (how often, what type)
+```
+
+### With Memory Management Skill
+```
+memory-management → archives → task-management data:
+  Move completed tasks to Done/ (daily)
+  Archive Done/ tasks older than 90 days
+  Compress old task logs for storage efficiency
+```
+
+---
+
+## Task File Naming Convention
+
+```
+Standard task (from file):
+  Format:  FILE_{original_name}_{timestamp}.md
+  Example: FILE_report_q1_20260216_0915.md
+
+Human task (action needed):
+  Format:  HT_{description}_{timestamp}.md
+  Example: HT_approve_email_alice_20260216_1030.md
+
+Scheduled task (auto-generated):
+  Format:  SCH_{job_name}_{timestamp}.md
+  Example: SCH_weekly_archive_20260216_0000.md
+
+Incident task (from self-healing):
+  Format:  INC_{component}_{timestamp}.md
+  Example: INC_watcher_crash_20260216_1430.md
+
+Analytics task (from insight):
+  Format:  ANL_{insight_type}_{timestamp}.md
+  Example: ANL_disk_forecast_20260216_0800.md
+```
+
+---
+
+## Best Practices
+
+### DO
+```
+- Create task immediately when file arrives (never delay)
+- Assign priority at creation time (not later)
+- Check dependencies before claiming any task
+- Update progress log at every meaningful step
+- Unblock dependent tasks immediately when blocker completes
+- Set realistic due dates based on priority level
+- Close tasks promptly — open task count is a health signal
+- Archive on schedule — Done/ folder should not grow unbounded
+```
+
+### DON'T
+```
+- Let tasks sit in CREATED without moving to QUEUED
+- Claim tasks that have unresolved blockers
+- Skip the completion checklist (partial completion = not done)
+- Leave OVERDUE tasks without escalating
+- Create circular dependencies
+- Change priority without logging the reason
+- Mark tasks COMPLETED without verifying all actions done
+- Let queue depth exceed 50 without escalating
+```
+
+---
+
+## Quick Reference: Task States
+
+```
+State        | Location         | Who Acts Next    | Alert If Stuck
+-------------|------------------|------------------|----------------
+CREATED      | Needs_Action/    | AI (queue it)    | > 5 minutes
+QUEUED       | Needs_Action/    | AI (claim it)    | > 2 hours
+IN_PROGRESS  | Needs_Action/    | AI (complete it) | > 2x expected time
+BLOCKED      | Needs_Action/    | Whoever has block| > 24 hours
+REVIEW       | Needs_Action/    | Human (approve)  | > 4 hours
+COMPLETED    | Done/            | Memory Mgmt      | > 90 days (archive)
+CANCELLED    | Done/cancelled/  | Memory Mgmt      | > 90 days (archive)
+ARCHIVED     | Archive/         | Nothing          | Never (permanent)
+```
+
+---
+
+**Status**: Production Ready
+**Priority**: CRITICAL (Every unit of work is a task — this manages all of them)
+**Task Lifecycle**: 8 states from CREATED to ARCHIVED
+**Priority Levels**: 4 (CRITICAL / HIGH / MEDIUM / LOW) with response SLAs
+**Queue Management**: Priority-first, age-secondary, dependency-aware
+**Due Date SLAs**: CRITICAL 15min, HIGH 4h, MEDIUM 24h, LOW 72h
+**Max Queue Depth**: 50 before escalation
+
+*Good task management = Nothing falls through the cracks, ever*

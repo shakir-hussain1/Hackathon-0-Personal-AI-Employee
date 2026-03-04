@@ -1,0 +1,77 @@
+2026-02-20 19:51:42,625 - INFO - ============================================================
+2026-02-20 19:51:42,649 - INFO - Gold Tier Orchestrator Starting
+2026-02-20 19:51:42,715 - INFO - Vault:       E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-02-20 19:51:42,772 - INFO - DRY RUN:     YES — safe mode
+2026-02-20 19:51:42,825 - INFO - Odoo:        DISABLED (set ENABLE_ODOO=true)
+2026-02-20 19:51:42,841 - INFO - Facebook:    DISABLED
+2026-02-20 19:51:42,897 - INFO - Instagram:   DISABLED
+2026-02-20 19:51:42,949 - INFO - Twitter:     DISABLED
+2026-02-20 19:51:42,998 - INFO - Ralph Loop:  ENABLED
+2026-02-20 19:51:43,049 - INFO - ============================================================
+2026-02-20 19:51:43,391 - WARNING - Gmail watcher not available (missing credentials?)
+2026-02-20 19:51:43,425 - WARNING - Calendar watcher not available
+2026-02-20 19:51:43,658 - ERROR - Reasoning loop failed: No module named 'orchestrator.reasoning_loop'
+2026-02-20 19:51:44,172 - INFO - Silver-Tier checks complete
+2026-02-20 19:51:44,229 - INFO - Gold-Tier schedules configured:
+2026-02-20 19:51:44,230 - INFO -   Silver integration:  every 15 minutes (ENABLED)
+2026-02-20 19:51:44,231 - INFO -   Social summaries:    every 6 hours
+2026-02-20 19:51:44,232 - INFO -   Odoo health check:   every 30 minutes (DISABLED)
+2026-02-20 19:51:44,233 - INFO -   Approved actions:    every 5 minutes
+2026-02-20 19:51:44,235 - INFO -   Weekly CEO briefing: Sunday at 20:00 (ENABLED)
+2026-02-20 19:51:44,236 - INFO -   DRY RUN MODE:        ON (no real external actions)
+2026-02-20 19:52:54,721 - INFO - ============================================================
+2026-02-20 19:52:54,762 - INFO - Gold Tier Orchestrator Starting
+2026-02-20 19:52:54,785 - INFO - Vault:       E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-02-20 19:52:54,812 - INFO - DRY RUN:     YES — safe mode
+2026-02-20 19:52:54,835 - INFO - Odoo:        DISABLED (set ENABLE_ODOO=true)
+2026-02-20 19:52:54,870 - INFO - Facebook:    DISABLED
+2026-02-20 19:52:54,885 - INFO - Instagram:   DISABLED
+2026-02-20 19:52:54,904 - INFO - Twitter:     DISABLED
+2026-02-20 19:52:54,928 - INFO - Ralph Loop:  ENABLED
+2026-02-20 19:52:54,954 - INFO - ============================================================
+2026-02-20 19:52:55,049 - WARNING - Gmail watcher not available (missing credentials?)
+2026-02-20 19:52:55,139 - WARNING - Calendar watcher not available
+2026-02-20 19:59:00,757 - INFO - ============================================================
+2026-02-20 19:59:00,837 - INFO - Gold Tier Orchestrator Starting
+2026-02-20 19:59:00,927 - INFO - Vault:       E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-02-20 19:59:00,949 - INFO - DRY RUN:     YES — safe mode
+2026-02-20 19:59:00,997 - INFO - Odoo:        DISABLED (set ENABLE_ODOO=true)
+2026-02-20 19:59:01,034 - INFO - Facebook:    DISABLED
+2026-02-20 19:59:01,084 - INFO - Instagram:   DISABLED
+2026-02-20 19:59:01,117 - INFO - Twitter:     DISABLED
+2026-02-20 19:59:01,144 - INFO - Ralph Loop:  ENABLED
+2026-02-20 19:59:01,188 - INFO - ============================================================
+2026-02-20 19:59:01,246 - WARNING - Gmail watcher not available (missing credentials?)
+2026-02-20 19:59:01,258 - WARNING - Calendar watcher not available
+2026-02-20 19:59:13,424 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 19:59:13,426 - ERROR - Failed to plan FILE_Invoice-ERKOVY1C-0001_20260216_171714.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKX5Bq85DxUKpnTbx1ng'}
+2026-02-20 20:06:42,209 - INFO - ============================================================
+2026-02-20 20:06:42,241 - INFO - Gold Tier Orchestrator Starting
+2026-02-20 20:06:42,299 - INFO - Vault:       E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-02-20 20:06:42,346 - INFO - DRY RUN:     YES — safe mode
+2026-02-20 20:06:42,400 - INFO - Odoo:        DISABLED (set ENABLE_ODOO=true)
+2026-02-20 20:06:42,446 - INFO - Facebook:    DISABLED
+2026-02-20 20:06:42,469 - INFO - Instagram:   DISABLED
+2026-02-20 20:06:42,488 - INFO - Twitter:     DISABLED
+2026-02-20 20:06:42,506 - INFO - Ralph Loop:  ENABLED
+2026-02-20 20:06:42,530 - INFO - ============================================================
+2026-02-20 20:06:42,610 - WARNING - Gmail watcher not available (missing credentials?)
+2026-02-20 20:06:42,628 - WARNING - Calendar watcher not available
+2026-02-20 20:06:52,235 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 20:06:52,246 - ERROR - Failed to plan FILE_Invoice-ERKOVY1C-0001_20260216_171714.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXf1LndEMoxaLF7SsHY'}
+2026-02-20 20:06:54,164 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 20:06:54,179 - ERROR - Failed to plan FILE_invoice_ABC_Feb2026_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXf9oHSMR7Bn2RnFVzg'}
+2026-02-20 20:06:56,749 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 20:06:56,751 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXfLaBNqsjGYQRSBT6B'}
+2026-02-20 20:06:59,006 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 20:06:59,008 - ERROR - Failed to plan LINKEDIN_POST_FILE_demo_meeting_notes_202602_20260219_010721.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXfW5fzd2HjKvnPLE9x'}
+2026-02-20 20:07:01,115 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 20:07:01,117 - ERROR - Failed to plan LINKEDIN_POST_project_milestone_feb2026_20260219_151516.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXffQkqCQEH7uP8aBbZ'}
+2026-02-20 20:07:01,366 - INFO - Silver-Tier checks complete
+2026-02-20 20:07:01,441 - INFO - Gold-Tier schedules configured:
+2026-02-20 20:07:01,447 - INFO -   Silver integration:  every 15 minutes (ENABLED)
+2026-02-20 20:07:01,448 - INFO -   Social summaries:    every 6 hours
+2026-02-20 20:07:01,449 - INFO -   Odoo health check:   every 30 minutes (DISABLED)
+2026-02-20 20:07:01,450 - INFO -   Approved actions:    every 5 minutes
+2026-02-20 20:07:01,450 - INFO -   Weekly CEO briefing: Sunday at 20:00 (ENABLED)
+2026-02-20 20:07:01,451 - INFO -   DRY RUN MODE:        ON (no real external actions)

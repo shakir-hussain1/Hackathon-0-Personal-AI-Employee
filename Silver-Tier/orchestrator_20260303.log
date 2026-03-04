@@ -1,0 +1,672 @@
+2026-03-03 01:18:19,706 - INFO - ==================================================
+2026-03-03 01:18:19,708 - INFO - Silver Tier Orchestrator Starting
+2026-03-03 01:18:19,710 - INFO - Vault: E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-03-03 01:18:19,710 - INFO - Gmail:          ENABLED
+2026-03-03 01:18:19,711 - INFO - Calendar:       ENABLED
+2026-03-03 01:18:19,712 - INFO - Email Sender:   ENABLED
+2026-03-03 01:18:19,713 - INFO - Reasoning Loop: ENABLED
+2026-03-03 01:18:19,714 - INFO - LinkedIn:       ENABLED
+2026-03-03 01:18:19,714 - INFO - WhatsApp:       DISABLED (set ENABLE_WHATSAPP=true in .env)
+2026-03-03 01:18:19,715 - INFO - ==================================================
+2026-03-03 01:18:25,223 - INFO - Checking Gmail inbox...
+2026-03-03 01:18:25,224 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 01:18:25,224 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 01:18:25,225 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 01:18:25,259 - INFO - Checking Google Calendar...
+2026-03-03 01:18:25,261 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-03 01:18:25,263 - INFO - Calendar check complete: 0 events processed
+2026-03-03 01:18:31,405 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 01:18:31,421 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYesWTYHTNBJRriEFqdVW'}
+2026-03-03 01:18:32,633 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 01:18:32,636 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYesWYqX19XmQcpthLxgS'}
+2026-03-03 01:18:39,085 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 500 Internal Server Error"
+2026-03-03 01:18:39,089 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'Internal server error'}, 'request_id': 'req_011CYesWe4JKYk6ZQx2eyYPH'}
+2026-03-03 01:18:39,285 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md
+2026-03-03 01:18:39,341 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md
+2026-03-03 01:18:39,399 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md
+2026-03-03 01:18:39,460 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md
+2026-03-03 01:18:39,490 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md
+2026-03-03 01:18:39,515 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md
+2026-03-03 01:18:39,541 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md
+2026-03-03 01:18:39,591 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md
+2026-03-03 01:18:39,662 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md
+2026-03-03 01:18:39,674 - INFO - LinkedIn watcher: 9 new post suggestion(s) queued
+2026-03-03 01:18:39,676 - INFO - LinkedIn watcher: 9 post suggestion(s) queued
+2026-03-03 01:18:39,694 - INFO - Schedules configured:
+2026-03-03 01:18:39,695 - INFO -   Gmail check:      every 15 minutes
+2026-03-03 01:18:39,697 - INFO -   Calendar check:   every 60 minutes
+2026-03-03 01:18:39,700 - INFO -   Email sender:     every 5 minutes
+2026-03-03 01:18:39,704 - INFO -   Reasoning loop:   every 30 minutes (ENABLED)
+2026-03-03 01:18:39,751 - INFO -   LinkedIn watcher: every 60 minutes (ENABLED)
+2026-03-03 01:18:39,764 - INFO -   WhatsApp watcher: every 60s (DISABLED (set ENABLE_WHATSAPP=true))
+2026-03-03 01:18:39,785 - INFO -   Dashboard update: every 30 minutes
+2026-03-03 01:18:39,790 - INFO -   Daily report:     at 18:00
+2026-03-03 01:33:39,846 - INFO - Checking Gmail inbox...
+2026-03-03 01:33:39,848 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 01:33:39,872 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 01:33:39,880 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 09:49:17,995 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:18,025 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYTaFokDbMENALFCgaa'}
+2026-03-03 09:49:19,850 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:19,863 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYTitibCCvdHuY2jLd1'}
+2026-03-03 09:49:21,351 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:21,352 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYTqMuNV9E31nRGuoCL'}
+2026-03-03 09:49:22,814 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:22,816 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYTwWzDxVVZBtF5SrKr'}
+2026-03-03 09:49:24,712 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:24,715 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYU5buiD5shb5Xe2Gze'}
+2026-03-03 09:49:26,916 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:26,927 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUF6Qt8N8d75YWnshq'}
+2026-03-03 09:49:29,240 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:29,241 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUR3wzDKTWij5ciDTQ'}
+2026-03-03 09:49:31,013 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:31,014 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUYGXhb2S1RiXiTnF7'}
+2026-03-03 09:49:32,860 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:32,921 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUg9ny5i8uK49Vg265'}
+2026-03-03 09:49:34,611 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:34,615 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUou85XaBsYPzTeNRB'}
+2026-03-03 09:49:36,407 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:36,409 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYUwhRp22jFBAAuUopG'}
+2026-03-03 09:49:38,699 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 09:49:38,725 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfYV7SZqwDg7ktm7qcXr'}
+2026-03-03 09:49:39,015 - INFO - Checking Gmail inbox...
+2026-03-03 09:49:39,041 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 09:49:39,047 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 09:49:39,118 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 09:49:39,136 - INFO - Checking Google Calendar...
+2026-03-03 09:49:39,155 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-03 09:49:39,172 - INFO - Calendar check complete: 0 events processed
+2026-03-03 10:04:39,927 - INFO - Checking Gmail inbox...
+2026-03-03 10:04:39,928 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 10:04:39,929 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 10:04:40,209 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 13:18:58,918 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:18:58,920 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpT3SX5v86Z2rHentXq'}
+2026-03-03 13:18:59,815 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:18:59,816 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpT6wMyNjD27wNSH7mD'}
+2026-03-03 13:19:00,634 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:19:00,635 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTAhpvdaccW1XeRQpG'}
+2026-03-03 13:19:01,452 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:19:01,453 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTE7xMD9ZTFpXtpwLW'}
+2026-03-03 13:19:02,272 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:19:02,274 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTHgGk2RcQWUbdKAfD'}
+2026-03-03 13:19:03,091 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:19:03,093 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTM8dhq6JJpdXiMmaQ'}
+2026-03-03 13:19:04,013 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:19:04,014 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTQghqHHzZ2juQoAvq'}
+2026-03-03 13:19:04,831 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:19:04,832 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTUYNkx3uzUT6njMdc'}
+2026-03-03 13:19:06,675 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:19:06,783 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTcdnpfA6DpUxFLRRS'}
+2026-03-03 13:19:08,458 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:19:08,460 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTkLPwM8q5jF7fANQU'}
+2026-03-03 13:19:09,338 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:19:09,339 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTotxfjLUNEQUH1rCi'}
+2026-03-03 13:19:10,156 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 13:19:10,158 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfpTsRHfgiKcYPY1KNX6'}
+2026-03-03 13:19:10,201 - INFO - Checking Gmail inbox...
+2026-03-03 13:19:10,202 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 13:19:10,203 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 13:19:10,206 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 13:19:10,246 - INFO - Checking Google Calendar...
+2026-03-03 13:19:10,246 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-03 13:19:10,249 - INFO - Calendar check complete: 0 events processed
+2026-03-03 13:34:10,306 - INFO - Checking Gmail inbox...
+2026-03-03 13:34:10,309 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 13:34:10,322 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 13:34:10,341 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 14:23:37,677 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:37,679 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuNwdVXBeb5j6ekRv1E'}
+2026-03-03 14:23:38,497 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:38,498 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuP1FGvRi8wV15dag8U'}
+2026-03-03 14:23:39,418 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:39,420 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuP5DQ4LWRrxz3jfrMY'}
+2026-03-03 14:23:40,237 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:40,238 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuP8dH9817tZJ5nzenw'}
+2026-03-03 14:23:41,056 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:41,058 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPCD5rXZ34J44J1MqS'}
+2026-03-03 14:23:41,876 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:41,877 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPFdxXRTXXAyWdfW6T'}
+2026-03-03 14:23:42,696 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:42,697 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPKBXkAQi9BQSbRuC5'}
+2026-03-03 14:23:43,514 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:43,516 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPNhNCiKa3rqkTqTvA'}
+2026-03-03 14:23:44,334 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:44,335 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPSJev6q33ToQ9dybu'}
+2026-03-03 14:23:45,255 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:45,256 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPVokRLpmaeTMgW6T7'}
+2026-03-03 14:23:46,177 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:46,179 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPZhA56dani83KTmBp'}
+2026-03-03 14:23:46,995 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:23:46,997 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfuPdRtc2uywpJK5VmCT'}
+2026-03-03 14:23:47,035 - INFO - Checking Gmail inbox...
+2026-03-03 14:23:47,035 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 14:23:47,038 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 14:23:47,044 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 14:23:47,045 - INFO - Checking Google Calendar...
+2026-03-03 14:23:47,046 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-03 14:23:47,048 - INFO - Calendar check complete: 0 events processed
+2026-03-03 14:38:47,096 - INFO - Checking Gmail inbox...
+2026-03-03 14:38:47,101 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 14:38:47,150 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 14:38:47,171 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 14:53:48,613 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:53:48,615 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwgSfhJyCsfNK3vq86p'}
+2026-03-03 14:53:50,027 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:53:50,029 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwgYJX6DgYXNKhqd5Rb'}
+2026-03-03 14:53:51,358 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:53:51,360 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwge5nH751SThw5KkZY'}
+2026-03-03 14:53:52,688 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:53:52,691 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwgjzEqJYzgmzqBDfKb'}
+2026-03-03 14:53:54,020 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:53:54,022 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwgqhHaZgkYfKJFAxAJ'}
+2026-03-03 14:53:56,170 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:53:56,173 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwgzdJdZcyg9q3QUjE5'}
+2026-03-03 14:53:57,399 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:53:57,401 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwh6CAhDjRfkNCPRVH1'}
+2026-03-03 14:53:58,730 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:53:58,733 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwhBf5YDK9emScQWPVD'}
+2026-03-03 14:53:59,959 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:53:59,961 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwhH3H56QQTSE6NXDHj'}
+2026-03-03 14:54:01,188 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:54:01,191 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwhNREe8xoMsviZHpz6'}
+2026-03-03 14:54:02,416 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:54:02,419 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwhTbHZ5qas362Hw6nm'}
+2026-03-03 14:54:03,645 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 14:54:03,648 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfwhYtH7hjCLx1ghFCcn'}
+2026-03-03 14:54:03,689 - INFO - Checking Gmail inbox...
+2026-03-03 14:54:03,691 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 14:54:03,694 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 14:54:03,701 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 15:09:03,807 - INFO - Checking Gmail inbox...
+2026-03-03 15:09:03,810 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 15:09:03,833 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 15:09:03,846 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 15:24:04,027 - INFO - Checking Google Calendar...
+2026-03-03 15:24:04,037 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-03 15:24:04,045 - INFO - Calendar check complete: 0 events processed
+2026-03-03 15:24:05,752 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:05,755 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfyzPVgWfBHR1QDz9bPf'}
+2026-03-03 15:24:07,699 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:07,702 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfyzY7M4mE7u8mqUxrp7'}
+2026-03-03 15:24:09,440 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:09,443 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfyzeByKisor9NsZ8aAY'}
+2026-03-03 15:24:10,872 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:10,876 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfyzmTGxNW6cYt9jWtpt'}
+2026-03-03 15:24:12,632 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:12,635 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfyzuMneb93cpQ2Wzj6G'}
+2026-03-03 15:24:14,149 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:14,152 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz11mzjXBfV68NjkeBL'}
+2026-03-03 15:24:15,469 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:15,472 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz17WmsXNdTGp7YApnc'}
+2026-03-03 15:24:16,830 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:16,832 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz1D97bb9snTUHmKToo'}
+2026-03-03 15:24:18,155 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:18,164 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz1K1aTxe5t5zfHXrrN'}
+2026-03-03 15:24:19,371 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:19,374 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz1Q3Sr6hScE7Mpa2HM'}
+2026-03-03 15:24:20,601 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:20,604 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz1VPuhJxEZuhAbXXxd'}
+2026-03-03 15:24:21,931 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:24:21,933 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYfz1anMw46JsGBvNKMbB'}
+2026-03-03 15:24:22,059 - INFO - Checking Gmail inbox...
+2026-03-03 15:24:22,060 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 15:24:22,064 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 15:24:22,070 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 15:39:22,142 - INFO - Checking Gmail inbox...
+2026-03-03 15:39:22,143 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 15:39:22,150 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 15:39:22,152 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 15:54:23,549 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:23,550 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JQ5PNSLpAChNqvKDJ'}
+2026-03-03 15:54:24,311 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:24,319 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JTD9wv8yKFhDkqt7L'}
+2026-03-03 15:54:25,080 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:25,084 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JWaZZkRepWU2rNuTg'}
+2026-03-03 15:54:25,819 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:25,821 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JZmo6aEagt5SnUFRG'}
+2026-03-03 15:54:26,584 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:26,587 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2Jd4jnkerN2GA28AkN'}
+2026-03-03 15:54:27,296 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:27,300 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2Jg7YYF4RTzaEYkTBK'}
+2026-03-03 15:54:28,023 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:28,025 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JjCadeNztj4UxAYLM'}
+2026-03-03 15:54:28,746 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:28,747 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JnHsMCU438e2YRxJq'}
+2026-03-03 15:54:29,461 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:29,465 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2JqLRVmG8P1czgqQEe'}
+2026-03-03 15:54:30,271 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:30,275 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2Jta9D8kXqeY2waxmn'}
+2026-03-03 15:54:31,006 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:31,008 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2Jwx3TVRhmux5C8JrP'}
+2026-03-03 15:54:31,728 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 15:54:31,733 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg2K135NgbDzXtju3e2C'}
+2026-03-03 15:54:31,814 - INFO - Checking Gmail inbox...
+2026-03-03 15:54:31,815 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 15:54:31,816 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 15:54:31,822 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 16:09:32,169 - INFO - Checking Gmail inbox...
+2026-03-03 16:09:32,172 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 16:09:32,179 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 16:09:32,186 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 16:24:32,613 - INFO - Checking Google Calendar...
+2026-03-03 16:24:32,614 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-03 16:24:32,616 - INFO - Calendar check complete: 0 events processed
+2026-03-03 16:24:33,718 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:33,720 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4bqZGnsJAirQFm8fnT'}
+2026-03-03 16:24:34,483 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:34,486 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4btrTkZ1p4EhNQPQjZ'}
+2026-03-03 16:24:35,208 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:35,210 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4bww1WckiyrbAkTKLi'}
+2026-03-03 16:24:35,964 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:35,967 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4c1BDWYogT2eXCtyg6'}
+2026-03-03 16:24:36,687 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:36,690 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4c4F28fQLaCRrgsoy9'}
+2026-03-03 16:24:37,461 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:37,463 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4c7UV6sL1sH85TFLkF'}
+2026-03-03 16:24:38,181 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:38,184 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cAdk5DMzrmDBkc8Bz'}
+2026-03-03 16:24:38,920 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:38,923 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cDoVZFmnYd7ZoHAw5'}
+2026-03-03 16:24:39,662 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:39,665 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cGwznWLTpYotBWLEq'}
+2026-03-03 16:24:40,377 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:40,380 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cL42RJjAs6hrejWML'}
+2026-03-03 16:24:41,113 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:41,115 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cPA4CpxEKpKz7jt13'}
+2026-03-03 16:24:41,890 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:24:41,894 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg4cSVUvQB3YzuBKTgPL'}
+2026-03-03 16:24:41,950 - INFO - Checking Gmail inbox...
+2026-03-03 16:24:41,951 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 16:24:41,953 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 16:24:41,959 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 16:39:42,327 - INFO - Checking Gmail inbox...
+2026-03-03 16:39:42,330 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 16:39:42,344 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 16:39:42,353 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 16:55:25,271 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:25,275 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6xGzWvyf1NbkN68D6x'}
+2026-03-03 16:55:27,429 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:27,432 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6xS7T1RvaRkyiJEBJh'}
+2026-03-03 16:55:29,579 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:29,582 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6xbFcxYTHKEgEZDYyC'}
+2026-03-03 16:55:31,730 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:31,733 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6xk9fBGPQd3Fo7CyWK'}
+2026-03-03 16:55:33,777 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:33,780 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6xuDrwvqhuxvA2ywVH'}
+2026-03-03 16:55:35,825 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:35,828 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6y3vjd2ZCe4dDXVeXT'}
+2026-03-03 16:55:37,873 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:37,875 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yCeMj7EbkpY2yxPqP'}
+2026-03-03 16:55:39,918 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:39,921 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yMcMbXVqdenZNiCKa'}
+2026-03-03 16:55:41,969 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:41,972 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yW1sp418eYwDVUQCd'}
+2026-03-03 16:55:44,017 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:44,019 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yetBHAECFoYSQuz72'}
+2026-03-03 16:55:46,064 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:46,066 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yonxe5xP88wymT7zV'}
+2026-03-03 16:55:48,113 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 16:55:48,115 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYg6yxU6UBkUAzrNPsNJo'}
+2026-03-03 16:55:48,936 - INFO - Checking Gmail inbox...
+2026-03-03 16:55:48,938 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 16:55:48,954 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 16:55:49,185 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 19:48:18,425 - INFO - Checking Gmail inbox...
+2026-03-03 19:48:18,426 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 19:48:18,428 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 19:48:18,434 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 19:48:18,435 - INFO - Checking Google Calendar...
+2026-03-03 19:48:18,436 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-03 19:48:18,438 - INFO - Calendar check complete: 0 events processed
+2026-03-03 19:48:19,252 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:19,253 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL8zsyRXPCvV1HzKjnQ'}
+2026-03-03 19:48:20,071 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:20,072 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL94C9jCsSDE6FVYCPu'}
+2026-03-03 19:48:20,929 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:20,930 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL98DjynnTiDAZnxZsR'}
+2026-03-03 19:48:21,949 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:21,951 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9CcASy8KGL316tyFE'}
+2026-03-03 19:48:23,660 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:23,662 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9KNi2DpRNqPi8aPCT'}
+2026-03-03 19:48:24,393 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:24,395 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9P4iU6KHzZx3AL4iG'}
+2026-03-03 19:48:25,237 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:25,239 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9SfGEewnSSNnLAnEn'}
+2026-03-03 19:48:26,113 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:26,114 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9WCq6GzsuDFA5uXVm'}
+2026-03-03 19:48:26,932 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:26,933 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9Zmdz197cvTmErih5'}
+2026-03-03 19:48:27,750 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:27,754 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9d5KiJbBmYojXQcig'}
+2026-03-03 19:48:29,286 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:29,593 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9jhw3sVnvNKLKDV9n'}
+2026-03-03 19:48:30,924 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 19:48:30,925 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgL9riN4g1V8HuTPCHPx'}
+2026-03-03 20:03:31,081 - INFO - Checking Gmail inbox...
+2026-03-03 20:03:31,099 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 20:03:31,106 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 20:03:31,141 - INFO - Gmail check complete: 0 new emails processed
+2026-03-03 20:18:32,906 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:32,909 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNShRUXUU9eAWepp1MQ'}
+2026-03-03 20:18:34,775 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:34,777 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNSq7LRMKcVbwm9kBM9'}
+2026-03-03 20:18:36,004 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:36,006 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNSvdULefsYXqnkJTRi'}
+2026-03-03 20:18:37,335 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:37,337 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNT1zg5JQ8dyyEGhKYj'}
+2026-03-03 20:18:38,667 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:38,669 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNT7gVF9fKYjz1wvu51'}
+2026-03-03 20:18:39,997 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:39,999 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTDEc4E3xh581DgYxD'}
+2026-03-03 20:18:41,328 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:41,331 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTK375qJqJEqccZn4n'}
+2026-03-03 20:18:42,762 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:42,765 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTQqrS4J46NzB22akY'}
+2026-03-03 20:18:44,093 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:44,096 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTWjoxvRwHm4iMuUaN'}
+2026-03-03 20:18:45,415 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:45,417 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTcuPg3EfktC8Akgqb'}
+2026-03-03 20:18:46,756 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:46,759 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNTiMZTVi8LnqDZH8Uw'}
+2026-03-03 20:18:48,010 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-03 20:18:48,013 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgNToztGyHE1bFh2EfV7'}
+2026-03-03 20:18:48,104 - INFO - Checking Gmail inbox...
+2026-03-03 20:18:48,106 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-03 20:18:48,114 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-03 20:18:48,118 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 01:14:24,313 - INFO - Checking Gmail inbox...
+2026-03-04 01:14:24,313 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 01:14:24,314 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 01:14:24,315 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 01:14:24,316 - INFO - Checking Google Calendar...
+2026-03-04 01:14:24,318 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-04 01:14:24,320 - INFO - Calendar check complete: 0 events processed
+2026-03-04 01:14:25,513 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:25,515 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm1NKW7sKd53bVT3Ahh'}
+2026-03-04 01:14:26,928 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:26,929 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm1TRqXmkYom5Ew9JgL'}
+2026-03-04 01:14:28,099 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:28,101 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm1ZSEdbi63qbtLzHVM'}
+2026-03-04 01:14:29,570 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:29,575 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm1eRsgHV5zdkKzVmcb'}
+2026-03-04 01:14:30,835 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:30,836 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm1kfRaVDoXvGepvb75'}
+2026-03-04 01:14:32,015 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:32,018 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm1rBoQnXA5MKC5i5Vo'}
+2026-03-04 01:14:35,849 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:35,855 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm28YohkipYk8jmdyCB'}
+2026-03-04 01:14:38,063 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:38,066 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm2HyLouFHoAuiTfKH2'}
+2026-03-04 01:14:40,062 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:40,074 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm2S7V5tRTxkmipEJe5'}
+2026-03-04 01:14:41,811 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:41,812 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm2a4DyqyB2hSW9MWKm'}
+2026-03-04 01:14:43,370 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:43,433 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm2gPDqXwvANmSGz4oE'}
+2026-03-04 01:14:44,758 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:14:44,760 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgm2ncH43eLtSALwyDbG'}
+2026-03-04 01:29:44,929 - INFO - Checking Gmail inbox...
+2026-03-04 01:29:44,930 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 01:29:44,934 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 01:29:44,944 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 01:44:47,449 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:44:47,453 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoKfeHZAHi49Kc1gUcc'}
+2026-03-04 01:44:48,975 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:44:48,978 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoKnfhvidV9YUq5EAA4'}
+2026-03-04 01:44:50,931 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:44:50,935 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoKvgAPucUA3d91c8Z3'}
+2026-03-04 01:44:52,572 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:44:52,575 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoL3cdEUU26mfVTxyn6'}
+2026-03-04 01:44:54,317 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:44:54,320 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoLAzdTV7w91AgH1XGT'}
+2026-03-04 01:44:55,845 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:44:55,848 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoLHhwwgUckJhKTw5wv'}
+2026-03-04 01:44:57,589 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:44:57,592 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoLRKbH2AqurpX4HpdX'}
+2026-03-04 01:44:59,122 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:44:59,125 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoLXh5ZSJ8X33h5M7i3'}
+2026-03-04 01:45:00,557 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:45:00,559 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoLdzqkRwGD7hbiAsXZ'}
+2026-03-04 01:45:02,298 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:45:02,300 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoLmLN4ekvMbZBkVLwx'}
+2026-03-04 01:45:05,266 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:45:05,269 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoLzBHS5mvSidBJjKVm'}
+2026-03-04 01:45:06,803 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 01:45:06,805 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgoM6a1AJNZS8N85RviN'}
+2026-03-04 01:45:06,873 - INFO - Checking Gmail inbox...
+2026-03-04 01:45:06,875 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 01:45:06,883 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 01:45:06,890 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 02:00:07,027 - INFO - Checking Gmail inbox...
+2026-03-04 02:00:07,036 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 02:00:07,042 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 02:00:07,055 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 02:15:07,202 - INFO - Checking Google Calendar...
+2026-03-04 02:15:07,211 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-04 02:15:07,219 - INFO - Calendar check complete: 0 events processed
+2026-03-04 02:15:08,910 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:08,913 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqdwchg7rQy1BLsd4q7'}
+2026-03-04 02:15:10,344 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:10,346 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqe3fqE1Ym5aCqv4ACa'}
+2026-03-04 02:15:11,675 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:11,678 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqe9M9FpK2Cr9bMtnhZ'}
+2026-03-04 02:15:12,930 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:12,932 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqeF7R2EyKoCZdTuy3k'}
+2026-03-04 02:15:14,439 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:14,441 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqeLiWVaLihY7qkdbHk'}
+2026-03-04 02:15:15,976 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:15,978 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqeTvbKsoAT391m9HB3'}
+2026-03-04 02:15:17,307 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:17,309 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqeZQVweb2EMxDPG5ej'}
+2026-03-04 02:15:18,637 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:18,639 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqef458prv5AgV4GTFu'}
+2026-03-04 02:15:19,968 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:20,053 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqem9BqaNCxQJjsVahD'}
+2026-03-04 02:15:21,402 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:21,404 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqervhQV4SxRZN7uDTY'}
+2026-03-04 02:15:22,938 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:22,940 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqeyU76k1ooTw8gmK16'}
+2026-03-04 02:15:24,167 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:15:24,169 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgqf4yVWDkmXWyEU1ekC'}
+2026-03-04 02:15:24,279 - INFO - Checking Gmail inbox...
+2026-03-04 02:15:24,280 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 02:15:24,286 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 02:15:24,290 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 02:30:24,386 - INFO - Checking Gmail inbox...
+2026-03-04 02:30:24,389 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 02:30:24,403 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 02:30:24,421 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 02:45:26,584 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:26,587 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgswwNJdBUmZ1QhWXMop'}
+2026-03-04 02:45:28,426 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:28,428 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsx5C6k7ua67mM5KE27'}
+2026-03-04 02:45:29,860 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:29,863 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsxBKCJTMExJogyNQo3'}
+2026-03-04 02:45:31,137 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:31,139 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsxGx2qMZ6CQw8pATeV'}
+2026-03-04 02:45:32,523 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:32,526 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsxNcqubfrbETK3NmqM'}
+2026-03-04 02:45:33,957 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:33,960 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsxUZms7ECuP67Q4TPq'}
+2026-03-04 02:45:35,493 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:35,496 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsxbCtKN84VwjZBNEE2'}
+2026-03-04 02:45:36,823 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:36,826 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsxhCnd58JkbQT5p2ja'}
+2026-03-04 02:45:38,214 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:38,217 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsxoChh8FzgdSY8M9Fj'}
+2026-03-04 02:45:39,592 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:39,596 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsxtzxFNMS1VidWVhPB'}
+2026-03-04 02:45:41,125 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:41,131 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsy1XcMEgdEV2t8edPR'}
+2026-03-04 02:45:42,866 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 02:45:42,870 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgsy7BgYrZcongSz2XkP'}
+2026-03-04 02:45:43,006 - INFO - Checking Gmail inbox...
+2026-03-04 02:45:43,008 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 02:45:43,012 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 02:45:43,020 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 03:48:15,561 - INFO - Checking Gmail inbox...
+2026-03-04 03:48:15,580 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 03:48:15,612 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 03:48:15,704 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 03:48:15,771 - INFO - Checking Google Calendar...
+2026-03-04 03:48:15,778 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-04 03:48:15,792 - INFO - Calendar check complete: 0 events processed
+2026-03-04 03:48:17,370 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:17,382 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxjugr3vRT7GZbxTi15'}
+2026-03-04 03:48:18,851 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:18,858 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxk1hFQHUDb1LQCpe9j'}
+2026-03-04 03:48:20,741 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:20,742 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxkA7WgNFuBcXEGKZn3'}
+2026-03-04 03:48:22,181 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:22,183 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxkGKL5nUerB26XjVkG'}
+2026-03-04 03:48:23,695 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:23,723 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxkN7aZL8Db9ncHShV8'}
+2026-03-04 03:48:25,379 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:25,381 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxkVY4bWBh1YCT24b3f'}
+2026-03-04 03:48:26,404 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:26,405 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxka9P7QBBFcF9nwKCV'}
+2026-03-04 03:48:27,600 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:27,602 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxkfKBRUrKMDj8NHvnX'}
+2026-03-04 03:48:28,662 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:28,663 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxkjp44eXgXve63M1Sw'}
+2026-03-04 03:48:29,435 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:29,436 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxko8yfrPHdW7RLgHEj'}
+2026-03-04 03:48:31,421 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:31,422 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxkwR4GAiJSxeHmxhAP'}
+2026-03-04 03:48:32,446 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 03:48:32,447 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYgxm1tgjZK3XyV2srzTP'}
+2026-03-04 04:03:32,839 - INFO - Checking Gmail inbox...
+2026-03-04 04:03:32,842 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 04:03:32,854 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 04:03:32,890 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 04:18:33,797 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:33,829 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh13p21o1ffhQrkLfE2E'}
+2026-03-04 04:18:34,606 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:34,607 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh13sTPZ5oMUr9wrX1Cp'}
+2026-03-04 04:18:35,410 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:35,411 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh13vsGkvw9wdW2BGHED'}
+2026-03-04 04:18:36,232 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:36,233 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh13zPMjefiuYZvHncMW'}
+2026-03-04 04:18:37,082 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:37,083 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh1442dPZhPjUwHWqRhs'}
+2026-03-04 04:18:37,790 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:37,793 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh1474Sic8UZNAHphUH7'}
+2026-03-04 04:18:38,546 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:38,548 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh14AFw7qRdHKuAuNUGL'}
+2026-03-04 04:18:39,288 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:39,289 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh14DQSHFbeHqbUSHSds'}
+2026-03-04 04:18:40,009 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:40,011 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh14GYhgRrfdgVJfrxbX'}
+2026-03-04 04:18:40,794 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:40,797 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh14KckCdBByj46BiGTH'}
+2026-03-04 04:18:41,541 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:41,543 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh14P3d7jgc4EfD2EFqr'}
+2026-03-04 04:18:42,321 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:18:42,324 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh14SRmm3YAGjWN9i8sV'}
+2026-03-04 04:18:42,401 - INFO - Checking Gmail inbox...
+2026-03-04 04:18:42,402 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 04:18:42,405 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 04:18:42,409 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 04:33:42,535 - INFO - Checking Gmail inbox...
+2026-03-04 04:33:42,535 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 04:33:42,537 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 04:33:42,539 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 04:48:42,574 - INFO - Checking Google Calendar...
+2026-03-04 04:48:42,583 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-04 04:48:42,592 - INFO - Calendar check complete: 0 events processed
+2026-03-04 04:48:43,623 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:43,627 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MDzcgMcXwz8xJeSjD'}
+2026-03-04 04:48:44,351 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:44,354 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MH7PTN6sTPMityRqE'}
+2026-03-04 04:48:45,115 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:45,118 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MLLrkqne6RwXiDRp8'}
+2026-03-04 04:48:45,849 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:45,852 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MPR9jDr97E9HcHfqi'}
+2026-03-04 04:48:46,584 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:46,585 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MSbeRQUUKQRDqQLjJ'}
+2026-03-04 04:48:47,413 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:47,416 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MVdxLaLh7qgzHEXEB'}
+2026-03-04 04:48:48,140 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:48,143 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MZHyq5igMpDuiV9dF'}
+2026-03-04 04:48:48,908 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:48,909 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3McJZ2cS9wtY3wnp6e'}
+2026-03-04 04:48:49,637 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:49,640 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MfakBARTWUUhc4iGV'}
+2026-03-04 04:48:50,464 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:50,465 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MitgK2YnJMx4pcq1H'}
+2026-03-04 04:48:51,166 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:51,170 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MnEbSYeHRWtw8dLn8'}
+2026-03-04 04:48:51,887 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 04:48:51,890 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh3MqKPXsS5ZRCLsYiGm'}
+2026-03-04 04:48:51,968 - INFO - Checking Gmail inbox...
+2026-03-04 04:48:51,968 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 04:48:51,974 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 04:48:51,976 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 05:03:54,387 - INFO - Checking Gmail inbox...
+2026-03-04 05:03:54,388 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 05:03:54,403 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 05:03:54,408 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 05:18:55,175 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:18:55,177 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5eb9Yw1mZnuDFvs6L4'}
+2026-03-04 05:18:55,874 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:18:55,876 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5eeDr2oUAo46a1Jq6w'}
+2026-03-04 05:18:56,609 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:18:56,610 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5ehKsk8hpfZftFdWBX'}
+2026-03-04 05:18:57,406 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:18:57,408 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5ekhXoNkcgud18BZXu'}
+2026-03-04 05:18:58,132 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:18:58,134 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5eosHQNKh6QdXiB6Nu'}
+2026-03-04 05:18:58,856 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:18:58,857 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5erwpUAGZxea8BmdDr'}
+2026-03-04 05:18:59,608 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:18:59,610 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5ev7KuTDftr9aEFjZH'}
+2026-03-04 05:19:00,354 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:19:00,356 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5eyGKwKzxWY7w4yaj1'}
+2026-03-04 05:19:01,075 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:19:01,078 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5f2QLuxnTmwpXtDnsQ'}
+2026-03-04 05:19:01,784 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:19:01,786 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5f5UdzG4uetq2NFtLz'}
+2026-03-04 05:19:02,581 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:19:02,585 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5f8afYcjbUEcA891NL'}
+2026-03-04 05:19:03,317 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 05:19:03,320 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYh5fC2XjHTK8JhqKyR68'}
+2026-03-04 05:19:03,333 - INFO - Checking Gmail inbox...
+2026-03-04 05:19:03,333 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 05:19:03,334 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 05:19:03,335 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 05:34:03,373 - INFO - Checking Gmail inbox...
+2026-03-04 05:34:03,375 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 05:34:03,379 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 05:34:03,391 - INFO - Gmail check complete: 0 new emails processed
+2026-03-04 08:24:35,186 - INFO - Checking Google Calendar...
+2026-03-04 08:24:35,187 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-03-04 08:24:35,190 - INFO - Calendar check complete: 0 events processed
+2026-03-04 08:24:36,036 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:36,037 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260302_213624.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKoqyQzWHh25A5FgihM'}
+2026-03-04 08:24:36,958 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:36,959 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260302_213824.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKou9fHU9xspTMZZuCy'}
+2026-03-04 08:24:37,810 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:37,812 - ERROR - Failed to plan FILE_urgent_payment_followup_20260302_213724.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKoy2Kx7qgS9KyjRdYt'}
+2026-03-04 08:24:38,534 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:38,535 - ERROR - Failed to plan LINKEDIN_POST_FILE_Invoice-ERKOVY1C-0001_202_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKp2jpAE2qdZ4ajmchh'}
+2026-03-04 08:24:39,313 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:39,314 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Corp_20260220_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKp5nd7JM7ndmkTMgbH'}
+2026-03-04 08:24:40,030 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:40,031 - ERROR - Failed to plan LINKEDIN_POST_FILE_invoice_ABC_Feb2026_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKp954xoZB6tMsqZF9B'}
+2026-03-04 08:24:40,813 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:40,814 - ERROR - Failed to plan LINKEDIN_POST_FILE_meeting_notes_client_xyz__20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKpCPzR8iB56E7iY5cT'}
+2026-03-04 08:24:41,566 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:41,567 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_FILE_demo_meetin_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKpFVmmb5BH4XPKDaAT'}
+2026-03-04 08:24:42,385 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:42,386 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_meeting_notes_cl_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKpK3b5mJQzN5KeVSq2'}
+2026-03-04 08:24:43,307 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:43,308 - ERROR - Failed to plan LINKEDIN_POST_LINKEDIN_POST_project_mileston_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKpNZg4YAFaaKCtkbXX'}
+2026-03-04 08:24:44,126 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:44,127 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKpSZHXE4Yqe45QCEra'}
+2026-03-04 08:24:44,945 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-03-04 08:24:44,947 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260_20260303_011839.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYhKpVuSzRh8GavnVYHNy'}
+2026-03-04 08:24:44,970 - INFO - Checking Gmail inbox...
+2026-03-04 08:24:44,971 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-03-04 08:24:44,972 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-03-04 08:24:44,978 - INFO - Gmail check complete: 0 new emails processed

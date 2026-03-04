@@ -1,0 +1,24 @@
+# Gold-Tier requirements
+# Install: pip install -r requirements.txt
+# Then: playwright install chromium  (for WhatsApp)
+
+# Core (shared with Silver)
+python-dotenv==1.0.0
+schedule==1.2.0
+mcp==1.0.0
+
+# HTTP & API
+requests>=2.32.0
+anthropic>=0.40.0
+
+# Social Media
+tweepy>=4.14.0            # Twitter API v2
+
+# Playwright (for WhatsApp automation — optional)
+playwright>=1.40.0
+
+# Process management
+psutil>=5.9.0             # For watchdog process checking
+
+# Data processing
+# Note: xmlrpc.client is built-in Python (for Odoo fallback)

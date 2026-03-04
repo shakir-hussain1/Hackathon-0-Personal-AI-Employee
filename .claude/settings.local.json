@@ -1,0 +1,22 @@
+{
+  "enabledMcpjsonServers": [
+    "email-sender",
+    "linkedin-poster",
+    "odoo-connector",
+    "facebook-instagram",
+    "twitter-x"
+  ],
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python E:/Hackathon-0-Personal-AI-Employee/.claude/hooks/ralph_wiggum_stop.py"
+          }
+        ]
+      }
+    ]
+  }
+}

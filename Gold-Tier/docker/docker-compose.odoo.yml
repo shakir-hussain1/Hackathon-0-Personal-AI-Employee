@@ -1,0 +1,85 @@
+version: '3.8'
+
+# Odoo Community + PostgreSQL for Gold-Tier Accounting
+# Memory-optimized for 8GB RAM laptops
+#
+# Start: docker-compose -f Gold-Tier/docker/docker-compose.odoo.yml up -d
+# Stop:  docker-compose -f Gold-Tier/docker/docker-compose.odoo.yml down
+# Logs:  docker-compose -f Gold-Tier/docker/docker-compose.odoo.yml logs -f odoo
+# URL:   http://localhost:8069  (admin / admin_password)
+#
+# First setup:
+#   1. Open http://localhost:8069
+#   2. Create database named 'odoo'
+#   3. Install modules: Accounting, Contacts
+#   4. Set ODOO_URL=http://localhost:8069 in Gold-Tier/.env
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: odoo_postgres
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo_db_password
+    volumes:
+      - odoo_postgres_data:/var/lib/postgresql/data
+    deploy:
+      resources:
+        limits:
+          memory: 512M    # Conservative limit for 8GB RAM
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odoo"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  odoo:
+    image: odoo:17                  # Use 17 (stable, lighter than 19)
+    container_name: odoo_app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8069:8069"
+    environment:
+      HOST: postgres
+      USER: odoo
+      PASSWORD: odoo_db_password
+    volumes:
+      - odoo_web_data:/var/lib/odoo
+      - ./odoo_config:/etc/odoo     # Custom config (optional)
+    deploy:
+      resources:
+        limits:
+          memory: 1536M             # 1.5GB limit for 8GB RAM system
+        reservations:
+          memory: 512M
+    command: >
+      odoo
+      --db_host=postgres
+      --db_user=odoo
+      --db_password=odoo_db_password
+      --database=odoo
+      --limit-memory-hard=1610612736
+      --limit-memory-soft=1073741824
+      --workers=0
+      --max-cron-threads=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8069/web/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+volumes:
+  odoo_postgres_data:
+    driver: local
+  odoo_web_data:
+    driver: local
+
+networks:
+  default:
+    name: ai_employee_network

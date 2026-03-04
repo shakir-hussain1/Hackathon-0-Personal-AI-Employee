@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  cloud-orchestrator:
+    build: .
+    container_name: platinum_cloud_orchestrator
+    restart: unless-stopped
+    environment:
+      - DRY_RUN=${DRY_RUN:-true}
+      - ENABLE_GMAIL=${ENABLE_GMAIL:-false}
+      - CHECK_INTERVAL_MIN=${CHECK_INTERVAL_MIN:-15}
+      - VAULT_GIT_REMOTE=${VAULT_GIT_REMOTE}
+      - VAULT_PATH=/vault
+    volumes:
+      - vault_data:/vault          # Synced vault (git clone)
+      - /secrets/.env:/app/.env:ro # Secrets mounted read-only, never in image
+      - /secrets/credentials.json:/secrets/credentials.json:ro
+    command: python cloud_orchestrator.py
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  health-monitor:
+    build: .
+    container_name: platinum_health_monitor
+    restart: unless-stopped
+    depends_on:
+      - cloud-orchestrator
+    environment:
+      - VAULT_PATH=/vault
+      - HEALTH_CHECK_INTERVAL_SEC=${HEALTH_CHECK_INTERVAL_SEC:-60}
+      - MAX_RESTARTS_PER_HOUR=${MAX_RESTARTS_PER_HOUR:-5}
+    volumes:
+      - vault_data:/vault
+      - /secrets/.env:/app/.env:ro
+    command: python health_monitor.py
+
+volumes:
+  vault_data:
+    driver: local

@@ -1,0 +1,20 @@
+2026-02-18 16:48:57,981 - INFO - ==================================================
+2026-02-18 16:48:57,983 - INFO - Silver Tier Orchestrator Starting
+2026-02-18 16:48:57,984 - INFO - Vault: E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-02-18 16:48:57,985 - INFO - Gmail: ENABLED
+2026-02-18 16:48:57,985 - INFO - Calendar: ENABLED
+2026-02-18 16:48:57,986 - INFO - Email Sender: ENABLED
+2026-02-18 16:48:57,986 - INFO - ==================================================
+2026-02-18 16:49:09,587 - INFO - Checking Gmail inbox...
+2026-02-18 16:49:09,589 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-02-18 16:49:09,589 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-02-18 16:49:09,596 - INFO - Gmail check complete: 0 new emails processed
+2026-02-18 16:49:09,683 - INFO - Checking Google Calendar...
+2026-02-18 16:49:09,685 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-02-18 16:49:09,687 - INFO - Calendar check complete: 0 events processed
+2026-02-18 16:49:10,247 - INFO - Schedules configured:
+2026-02-18 16:49:10,248 - INFO -   Gmail check: every 15 minutes
+2026-02-18 16:49:10,248 - INFO -   Calendar check: every 60 minutes
+2026-02-18 16:49:10,248 - INFO -   Email sender: every 5 minutes
+2026-02-18 16:49:10,249 - INFO -   Dashboard update: every 30 minutes
+2026-02-18 16:49:10,249 - INFO -   Daily report: at 18:00

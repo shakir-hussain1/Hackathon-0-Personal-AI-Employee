@@ -1,0 +1,19 @@
+# Platinum Tier requirements
+# Inherits Gold-Tier deps + adds cloud/sync utilities
+
+# Core (same as Gold)
+python-dotenv==1.0.0
+schedule==1.2.0
+requests>=2.32.0
+
+# Process management & health monitoring
+psutil>=5.9.0
+
+# Gmail (cloud watcher — same as Silver)
+google-auth>=2.16.0
+google-api-python-client>=2.80.0
+google-auth-oauthlib>=1.0.0
+
+# Git operations (vault sync uses subprocess — no extra dep needed)
+# GitPython is optional but useful for advanced sync
+# gitpython>=3.1.40

@@ -1,0 +1,13 @@
+Client: ABC Trading Co.
+Date: 2026-02-19
+Invoice Number: INV-2026-042
+
+Items:
+- Web Development Services (40 hrs @ Rs 2500/hr) = Rs 100,000
+- UI/UX Design (10 hrs @ Rs 2000/hr)             = Rs  20,000
+- SEO Optimization (5 hrs @ Rs 1500/hr)           = Rs   7,500
+
+TOTAL DUE: Rs 127,500
+Due Date: 2026-03-05
+
+Payment via bank transfer. Details attached.

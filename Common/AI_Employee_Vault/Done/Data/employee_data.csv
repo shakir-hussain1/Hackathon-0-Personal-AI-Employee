@@ -1,0 +1,7 @@
+Employee_ID,Name,Department,Position,Salary,Join_Date,Email
+E001,Sarah Johnson,Management,Project Manager,85000,2024-01-15,sarah.j@company.com
+E002,Mike Chen,Engineering,Lead Developer,95000,2023-06-20,mike.c@company.com
+E003,Lisa Rodriguez,Design,Senior Designer,75000,2024-03-10,lisa.r@company.com
+E004,Ahmed Khan,QA,QA Lead,80000,2023-11-05,ahmed.k@company.com
+E005,John Smith,Engineering,Frontend Developer,70000,2025-02-01,john.s@company.com
+E006,Emma Wilson,Marketing,Marketing Manager,78000,2024-07-15,emma.w@company.com

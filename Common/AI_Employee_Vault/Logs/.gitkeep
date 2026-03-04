@@ -1,0 +1,2 @@
+# This file ensures the Logs folder is tracked by Git
+# Daily activity logs are stored here (excluded from Git via .gitignore)

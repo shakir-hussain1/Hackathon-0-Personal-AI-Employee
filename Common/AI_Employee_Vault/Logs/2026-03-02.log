@@ -1,0 +1,11 @@
+[2026-03-02 21:28:54] [INFO] Loaded 1 existing files from Inbox
+[2026-03-02 21:28:54] [INFO] FileSystemWatcher started with 30s interval
+[2026-03-02 21:36:24] [INFO] Detected new file: invoice_ABC_Corp.txt
+[2026-03-02 21:36:24] [INFO] Found 1 new item(s)
+[2026-03-02 21:36:24] [INFO] Created task: FILE_invoice_ABC_Corp_20260302_213624.md [Priority: HIGH]
+[2026-03-02 21:37:24] [INFO] Detected new file: urgent_payment_followup.txt
+[2026-03-02 21:37:24] [INFO] Found 1 new item(s)
+[2026-03-02 21:37:24] [INFO] Created task: FILE_urgent_payment_followup_20260302_213724.md [Priority: HIGH]
+[2026-03-02 21:38:24] [INFO] Detected new file: meeting_notes_client_xyz.md
+[2026-03-02 21:38:24] [INFO] Found 1 new item(s)
+[2026-03-02 21:38:24] [INFO] Created task: FILE_meeting_notes_client_xyz_20260302_213824.md [Priority: MEDIUM]

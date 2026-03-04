@@ -1,0 +1,116 @@
+2026-02-20 19:54:41,730 - INFO - ==================================================
+2026-02-20 19:54:41,758 - INFO - Silver Tier Orchestrator Starting
+2026-02-20 19:54:41,816 - INFO - Vault: E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-02-20 19:54:41,870 - INFO - Gmail:          ENABLED
+2026-02-20 19:54:41,915 - INFO - Calendar:       ENABLED
+2026-02-20 19:54:41,971 - INFO - Email Sender:   ENABLED
+2026-02-20 19:54:42,022 - INFO - Reasoning Loop: ENABLED
+2026-02-20 19:54:42,071 - INFO - LinkedIn:       ENABLED
+2026-02-20 19:54:42,112 - INFO - WhatsApp:       DISABLED (set ENABLE_WHATSAPP=true in .env)
+2026-02-20 19:54:42,125 - INFO - ==================================================
+2026-02-20 19:54:52,597 - INFO - Checking Gmail inbox...
+2026-02-20 19:54:52,600 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-02-20 19:54:52,601 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-02-20 19:54:52,607 - INFO - Gmail check complete: 0 new emails processed
+2026-02-20 19:54:52,651 - INFO - Checking Google Calendar...
+2026-02-20 19:54:52,653 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-02-20 19:54:52,656 - INFO - Calendar check complete: 0 events processed
+2026-02-20 19:59:00,648 - INFO - ==================================================
+2026-02-20 19:59:00,722 - INFO - Silver Tier Orchestrator Starting
+2026-02-20 19:59:00,757 - INFO - Vault: E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-02-20 19:59:00,809 - INFO - Gmail:          ENABLED
+2026-02-20 19:59:00,895 - INFO - Calendar:       ENABLED
+2026-02-20 19:59:00,928 - INFO - Email Sender:   ENABLED
+2026-02-20 19:59:00,970 - INFO - Reasoning Loop: ENABLED
+2026-02-20 19:59:00,997 - INFO - LinkedIn:       ENABLED
+2026-02-20 19:59:01,011 - INFO - WhatsApp:       DISABLED (set ENABLE_WHATSAPP=true in .env)
+2026-02-20 19:59:01,062 - INFO - ==================================================
+2026-02-20 19:59:06,228 - INFO - Checking Gmail inbox...
+2026-02-20 19:59:06,229 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-02-20 19:59:06,230 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-02-20 19:59:06,232 - INFO - Gmail check complete: 0 new emails processed
+2026-02-20 19:59:06,244 - INFO - Checking Google Calendar...
+2026-02-20 19:59:06,246 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-02-20 19:59:06,248 - INFO - Calendar check complete: 0 events processed
+2026-02-20 20:06:40,963 - INFO - ==================================================
+2026-02-20 20:06:40,991 - INFO - Silver Tier Orchestrator Starting
+2026-02-20 20:06:41,009 - INFO - Vault: E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-02-20 20:06:41,029 - INFO - Gmail:          ENABLED
+2026-02-20 20:06:41,048 - INFO - Calendar:       ENABLED
+2026-02-20 20:06:41,075 - INFO - Email Sender:   ENABLED
+2026-02-20 20:06:41,099 - INFO - Reasoning Loop: ENABLED
+2026-02-20 20:06:41,121 - INFO - LinkedIn:       ENABLED
+2026-02-20 20:06:41,148 - INFO - WhatsApp:       DISABLED (set ENABLE_WHATSAPP=true in .env)
+2026-02-20 20:06:41,171 - INFO - ==================================================
+2026-02-20 20:06:46,415 - INFO - Checking Gmail inbox...
+2026-02-20 20:06:46,417 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-02-20 20:06:46,418 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-02-20 20:06:46,420 - INFO - Gmail check complete: 0 new emails processed
+2026-02-20 20:06:46,434 - INFO - Checking Google Calendar...
+2026-02-20 20:06:46,435 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-02-20 20:06:46,436 - INFO - Calendar check complete: 0 events processed
+2026-02-20 20:07:00,232 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 20:07:00,235 - ERROR - Failed to plan FILE_Invoice-ERKOVY1C-0001_20260216_171714.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXfbgX9WdRvNPzwojXH'}
+2026-02-20 20:07:02,487 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 20:07:02,489 - ERROR - Failed to plan FILE_invoice_ABC_Feb2026_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXfm7K4kEWKvumHheDZ'}
+2026-02-20 20:07:04,287 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 20:07:04,290 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXfu8Fug5wH7CebWwek'}
+2026-02-20 20:07:05,971 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 20:07:05,975 - ERROR - Failed to plan LINKEDIN_POST_FILE_demo_meeting_notes_202602_20260219_010721.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXg1v3dmNd11kbSxmd6'}
+2026-02-20 20:07:07,815 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 20:07:07,817 - ERROR - Failed to plan LINKEDIN_POST_project_milestone_feb2026_20260219_151516.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXgA6AvFTH6zzX2MVRG'}
+2026-02-20 20:07:07,945 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_meeting_notes_client_xyz_20260220_200707.md
+2026-02-20 20:07:07,955 - INFO - LinkedIn watcher: 1 new post suggestion(s) queued
+2026-02-20 20:07:07,956 - INFO - LinkedIn watcher: 1 post suggestion(s) queued
+2026-02-20 20:07:07,996 - INFO - Schedules configured:
+2026-02-20 20:07:07,997 - INFO -   Gmail check:      every 15 minutes
+2026-02-20 20:07:07,998 - INFO -   Calendar check:   every 60 minutes
+2026-02-20 20:07:07,998 - INFO -   Email sender:     every 5 minutes
+2026-02-20 20:07:07,999 - INFO -   Reasoning loop:   every 30 minutes (ENABLED)
+2026-02-20 20:07:08,000 - INFO -   LinkedIn watcher: every 60 minutes (ENABLED)
+2026-02-20 20:07:08,001 - INFO -   WhatsApp watcher: every 60s (DISABLED (set ENABLE_WHATSAPP=true))
+2026-02-20 20:07:08,001 - INFO -   Dashboard update: every 30 minutes
+2026-02-20 20:07:08,002 - INFO -   Daily report:     at 18:00
+2026-02-20 21:53:58,346 - INFO - ==================================================
+2026-02-20 21:53:58,356 - INFO - Silver Tier Orchestrator Starting
+2026-02-20 21:53:58,359 - INFO - Vault: E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-02-20 21:53:58,360 - INFO - Gmail:          ENABLED
+2026-02-20 21:53:58,362 - INFO - Calendar:       ENABLED
+2026-02-20 21:53:58,363 - INFO - Email Sender:   ENABLED
+2026-02-20 21:53:58,365 - INFO - Reasoning Loop: ENABLED
+2026-02-20 21:53:58,366 - INFO - LinkedIn:       ENABLED
+2026-02-20 21:53:58,366 - INFO - WhatsApp:       DISABLED (set ENABLE_WHATSAPP=true in .env)
+2026-02-20 21:53:58,367 - INFO - ==================================================
+2026-02-20 21:54:02,194 - INFO - Checking Gmail inbox...
+2026-02-20 21:54:02,196 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-02-20 21:54:02,201 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-02-20 21:54:02,206 - INFO - Gmail check complete: 0 new emails processed
+2026-02-20 21:54:02,257 - INFO - Checking Google Calendar...
+2026-02-20 21:54:02,260 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-02-20 21:54:02,268 - INFO - Calendar check complete: 0 events processed
+2026-02-20 21:54:10,006 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 21:54:10,011 - ERROR - Failed to plan FILE_Invoice-ERKOVY1C-0001_20260216_171714.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfqbZ3PL1RHnRW1g69r'}
+2026-02-20 21:54:11,465 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 21:54:11,469 - ERROR - Failed to plan FILE_invoice_ABC_Corp_20260220_200710.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfqhpKwhZEeWPCvHWMZ'}
+2026-02-20 21:54:12,467 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 21:54:12,471 - ERROR - Failed to plan FILE_invoice_ABC_Feb2026_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfqmqvL2GaeiGyQt5KP'}
+2026-02-20 21:54:13,430 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 21:54:13,434 - ERROR - Failed to plan FILE_meeting_notes_client_xyz_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfqr9t2szLH83ECP3D7'}
+2026-02-20 21:54:14,613 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 21:54:14,616 - ERROR - Failed to plan FILE_urgent_payment_followup_20260220_200710.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfqvrQCdVavmthCmn8D'}
+2026-02-20 21:54:15,759 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 21:54:15,761 - ERROR - Failed to plan LINKEDIN_POST_FILE_demo_meeting_notes_202602_20260219_010721.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfr2CcoL2Py1hKrSQKN'}
+2026-02-20 21:54:16,972 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 21:54:16,976 - ERROR - Failed to plan LINKEDIN_POST_meeting_notes_client_xyz_20260220_200707.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfr72aeL8zcNNv8jYfJ'}
+2026-02-20 21:54:17,997 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-02-20 21:54:18,001 - ERROR - Failed to plan LINKEDIN_POST_project_milestone_feb2026_20260219_151516.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfrBYh41f1e2JHXbZnF'}
+2026-02-20 21:54:18,437 - INFO - Schedules configured:
+2026-02-20 21:54:18,438 - INFO -   Gmail check:      every 15 minutes
+2026-02-20 21:54:18,443 - INFO -   Calendar check:   every 60 minutes
+2026-02-20 21:54:18,446 - INFO -   Email sender:     every 5 minutes
+2026-02-20 21:54:18,449 - INFO -   Reasoning loop:   every 30 minutes (ENABLED)
+2026-02-20 21:54:18,452 - INFO -   LinkedIn watcher: every 60 minutes (ENABLED)
+2026-02-20 21:54:18,455 - INFO -   WhatsApp watcher: every 60s (DISABLED (set ENABLE_WHATSAPP=true))
+2026-02-20 21:54:18,461 - INFO -   Dashboard update: every 30 minutes
+2026-02-20 21:54:18,464 - INFO -   Daily report:     at 18:00
+2026-02-20 21:58:21,814 - INFO - Orchestrator stopped by user.

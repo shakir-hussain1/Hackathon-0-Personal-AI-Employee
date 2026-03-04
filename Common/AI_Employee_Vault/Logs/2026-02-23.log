@@ -1,0 +1,8 @@
+[2026-02-23 21:46:56] [INFO] Loaded 4 existing files from Inbox
+[2026-02-23 21:46:56] [INFO] FileSystemWatcher started with 30s interval
+[2026-02-23 21:53:26] [INFO] Detected new file: test_task.txt
+[2026-02-23 21:53:26] [INFO] Found 1 new item(s)
+[2026-02-23 21:53:26] [INFO] Created task: FILE_test_task_20260223_215326.md [Priority: MEDIUM]
+[2026-02-23 22:04:16] [LINKEDIN_MCP] LinkedIn draft created: LIPOST_20260223_220416 | Type: milestone | 691 chars
+[2026-02-23 22:04:20] [LINKEDIN_MCP] LinkedIn draft created: LIPOST_20260223_220420 | Type: thought_leadership | 860 chars
+[2026-02-23 22:04:22] [LINKEDIN_MCP] LinkedIn draft created: LIPOST_20260223_220422 | Type: thought_leadership | 745 chars

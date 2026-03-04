@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "email-sender": {
+      "type": "stdio",
+      "command": "E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\venv\\Scripts\\python.exe",
+      "args": [
+        "E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\mcp-servers\\email_sender\\server.py"
+      ]
+    },
+    "linkedin-poster": {
+      "type": "stdio",
+      "command": "E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\venv\\Scripts\\python.exe",
+      "args": [
+        "E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\mcp-servers\\linkedin_poster\\server.py"
+      ]
+    },
+    "odoo-connector": {
+      "type": "stdio",
+      "command": "E:\\Hackathon-0-Personal-AI-Employee\\Gold-Tier\\venv\\Scripts\\python.exe",
+      "args": [
+        "E:\\Hackathon-0-Personal-AI-Employee\\Gold-Tier\\mcp-servers\\odoo_connector\\server.py"
+      ]
+    },
+    "facebook-instagram": {
+      "type": "stdio",
+      "command": "E:\\Hackathon-0-Personal-AI-Employee\\Gold-Tier\\venv\\Scripts\\python.exe",
+      "args": [
+        "E:\\Hackathon-0-Personal-AI-Employee\\Gold-Tier\\mcp-servers\\facebook_instagram\\server.py"
+      ]
+    },
+    "twitter-x": {
+      "type": "stdio",
+      "command": "E:\\Hackathon-0-Personal-AI-Employee\\Gold-Tier\\venv\\Scripts\\python.exe",
+      "args": [
+        "E:\\Hackathon-0-Personal-AI-Employee\\Gold-Tier\\mcp-servers\\twitter_x\\server.py"
+      ]
+    }
+  }
+}

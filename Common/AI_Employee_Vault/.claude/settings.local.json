@@ -1,0 +1,9 @@
+{
+  "enabledMcpjsonServers": [
+    "email-sender",
+    "linkedin-poster",
+    "odoo-connector",
+    "facebook-instagram",
+    "twitter-x"
+  ]
+}

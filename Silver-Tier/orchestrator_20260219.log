@@ -1,0 +1,27 @@
+2026-02-19 01:07:18,688 - INFO - ==================================================
+2026-02-19 01:07:18,689 - INFO - Silver Tier Orchestrator Starting
+2026-02-19 01:07:18,690 - INFO - Vault: E:\Hackathon-0-Personal-AI-Employee\Common\AI_Employee_Vault
+2026-02-19 01:07:18,691 - INFO - Gmail:          ENABLED
+2026-02-19 01:07:18,693 - INFO - Calendar:       ENABLED
+2026-02-19 01:07:18,694 - INFO - Email Sender:   ENABLED
+2026-02-19 01:07:18,695 - INFO - Reasoning Loop: DISABLED (set ANTHROPIC_API_KEY)
+2026-02-19 01:07:18,696 - INFO - LinkedIn:       ENABLED
+2026-02-19 01:07:18,697 - INFO - ==================================================
+2026-02-19 01:07:20,836 - INFO - Checking Gmail inbox...
+2026-02-19 01:07:20,851 - ERROR - credentials.json not found. Download from Google Cloud Console.
+2026-02-19 01:07:20,852 - ERROR - Gmail check failed: credentials.json required for Gmail OAuth
+2026-02-19 01:07:20,853 - INFO - Gmail check complete: 0 new emails processed
+2026-02-19 01:07:20,869 - INFO - Checking Google Calendar...
+2026-02-19 01:07:20,869 - ERROR - Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+2026-02-19 01:07:20,870 - INFO - Calendar check complete: 0 events processed
+2026-02-19 01:07:21,455 - INFO - LinkedIn post suggestion created: LINKEDIN_POST_FILE_demo_meeting_notes_202602_20260219_010721.md
+2026-02-19 01:07:21,458 - INFO - LinkedIn watcher: 1 new post suggestion(s) queued
+2026-02-19 01:07:21,458 - INFO - LinkedIn watcher: 1 post suggestion(s) queued
+2026-02-19 01:07:21,475 - INFO - Schedules configured:
+2026-02-19 01:07:21,476 - INFO -   Gmail check:      every 15 minutes
+2026-02-19 01:07:21,476 - INFO -   Calendar check:   every 60 minutes
+2026-02-19 01:07:21,477 - INFO -   Email sender:     every 5 minutes
+2026-02-19 01:07:21,477 - INFO -   Reasoning loop:   every 30 minutes (DISABLED — set ANTHROPIC_API_KEY)
+2026-02-19 01:07:21,478 - INFO -   LinkedIn watcher: every 60 minutes (ENABLED)
+2026-02-19 01:07:21,478 - INFO -   Dashboard update: every 30 minutes
+2026-02-19 01:07:21,479 - INFO -   Daily report:     at 18:00

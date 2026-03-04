@@ -1,0 +1,19 @@
+[2026-02-16 16:36:46] [INFO] Loaded 2 existing files from Inbox
+[2026-02-16 16:36:46] [INFO] FileSystemWatcher started with 30s interval
+[2026-02-16 16:37:28] [INFO] Loaded 2 existing files from Inbox
+[2026-02-16 16:37:28] [INFO] FileSystemWatcher started with 30s interval
+[2026-02-16 17:15:44] [INFO] Loaded 2 existing files from Inbox
+[2026-02-16 17:15:44] [INFO] FileSystemWatcher started with 30s interval
+[2026-02-16 17:17:14] [INFO] Detected new file: Invoice-ERKOVY1C-0001.pdf
+[2026-02-16 17:17:14] [INFO] Found 1 new item(s)
+[2026-02-16 17:17:14] [INFO] Created task: FILE_Invoice-ERKOVY1C-0001_20260216_171714.md [Priority: HIGH]
+[2026-02-16 17:31:14] [INFO] Detected new file: demo_meeting_notes.txt
+[2026-02-16 17:31:14] [INFO] Detected new file: employee_data.csv
+[2026-02-16 17:31:14] [INFO] Found 2 new item(s)
+[2026-02-16 17:31:14] [INFO] Created task: FILE_demo_meeting_notes_20260216_173114.md [Priority: MEDIUM]
+[2026-02-16 17:31:14] [INFO] Created task: FILE_employee_data_20260216_173114.md [Priority: HIGH]
+[2026-02-16 17:31:16] [INFO] Loaded 5 existing files from Inbox
+[2026-02-16 17:31:16] [INFO] FileSystemWatcher started with 30s interval
+[2026-02-16 17:34:22] [INFO] PROCESSED | demo_meeting_notes.txt | SUCCESS | Moved to Done/Documents/
+[2026-02-16 17:34:25] [INFO] PROCESSED | employee_data.csv | SUCCESS | Moved to Done/Data/
+[2026-02-16 17:51:02] [INFO] Loaded 3 existing files from Inbox

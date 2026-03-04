@@ -1,0 +1,49 @@
+[2026-02-20 19:54:42] [SILVER_ORCHESTRATOR] Silver Orchestrator started
+[2026-02-20 19:54:52] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-02-20 19:54:52] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-02-20 19:56:26] [INFO] Loaded 3 existing files from Inbox
+[2026-02-20 19:56:26] [INFO] FileSystemWatcher started with 30s interval
+[2026-02-20 19:57:11] [INFO] Loaded 3 existing files from Inbox
+[2026-02-20 19:57:12] [INFO] FileSystemWatcher started with 30s interval
+[2026-02-20 19:59:00] [INFO] Loaded 3 existing files from Inbox
+[2026-02-20 19:59:00] [INFO] FileSystemWatcher started with 30s interval
+[2026-02-20 19:59:01] [SILVER_ORCHESTRATOR] Silver Orchestrator started
+[2026-02-20 19:59:06] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-02-20 19:59:06] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-02-20 19:59:13] [REASONING_LOOP] ERROR planning FILE_Invoice-ERKOVY1C-0001_20260216_171714.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKX5Bq85DxUKpnTbx1ng'}
+[2026-02-20 20:06:39] [INFO] Loaded 3 existing files from Inbox
+[2026-02-20 20:06:39] [INFO] FileSystemWatcher started with 30s interval
+[2026-02-20 20:06:41] [SILVER_ORCHESTRATOR] Silver Orchestrator started
+[2026-02-20 20:06:46] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-02-20 20:06:46] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-02-20 20:06:52] [REASONING_LOOP] ERROR planning FILE_Invoice-ERKOVY1C-0001_20260216_171714.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXf1LndEMoxaLF7SsHY'}
+[2026-02-20 20:06:54] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Feb2026_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXf9oHSMR7Bn2RnFVzg'}
+[2026-02-20 20:06:56] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXfLaBNqsjGYQRSBT6B'}
+[2026-02-20 20:06:59] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_demo_meeting_notes_202602_20260219_010721.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXfW5fzd2HjKvnPLE9x'}
+[2026-02-20 20:07:00] [REASONING_LOOP] ERROR planning FILE_Invoice-ERKOVY1C-0001_20260216_171714.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXfbgX9WdRvNPzwojXH'}
+[2026-02-20 20:07:01] [REASONING_LOOP] ERROR planning LINKEDIN_POST_project_milestone_feb2026_20260219_151516.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXffQkqCQEH7uP8aBbZ'}
+[2026-02-20 20:07:02] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Feb2026_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXfm7K4kEWKvumHheDZ'}
+[2026-02-20 20:07:04] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXfu8Fug5wH7CebWwek'}
+[2026-02-20 20:07:05] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_demo_meeting_notes_202602_20260219_010721.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXg1v3dmNd11kbSxmd6'}
+[2026-02-20 20:07:07] [REASONING_LOOP] ERROR planning LINKEDIN_POST_project_milestone_feb2026_20260219_151516.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKXgA6AvFTH6zzX2MVRG'}
+[2026-02-20 20:07:07] [LINKEDIN_WATCHER] Post suggestion queued for: meeting_notes_client_xyz.md
+[2026-02-20 20:07:10] [INFO] Detected new file: invoice_ABC_Corp.txt
+[2026-02-20 20:07:10] [INFO] Detected new file: urgent_payment_followup.txt
+[2026-02-20 20:07:10] [INFO] Found 2 new item(s)
+[2026-02-20 20:07:10] [INFO] Created task: FILE_invoice_ABC_Corp_20260220_200710.md [Priority: HIGH]
+[2026-02-20 20:07:10] [INFO] Created task: FILE_urgent_payment_followup_20260220_200710.md [Priority: HIGH]
+[2026-02-20 21:53:57] [INFO] Loaded 4 existing files from Inbox
+[2026-02-20 21:53:57] [INFO] FileSystemWatcher started with 30s interval
+[2026-02-20 21:53:58] [SILVER_ORCHESTRATOR] Silver Orchestrator started
+[2026-02-20 21:54:02] [GMAIL_WATCHER] ERROR: Gmail check failed: credentials.json required for Gmail OAuth
+[2026-02-20 21:54:02] [CALENDAR_WATCHER] ERROR: Calendar check failed: [Errno 2] No such file or directory: 'E:\\Hackathon-0-Personal-AI-Employee\\Silver-Tier\\credentials.json'
+[2026-02-20 21:54:10] [REASONING_LOOP] ERROR planning FILE_Invoice-ERKOVY1C-0001_20260216_171714.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfqbZ3PL1RHnRW1g69r'}
+[2026-02-20 21:54:11] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Corp_20260220_200710.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfqhpKwhZEeWPCvHWMZ'}
+[2026-02-20 21:54:12] [REASONING_LOOP] ERROR planning FILE_invoice_ABC_Feb2026_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfqmqvL2GaeiGyQt5KP'}
+[2026-02-20 21:54:13] [REASONING_LOOP] ERROR planning FILE_meeting_notes_client_xyz_20260219_174322.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfqr9t2szLH83ECP3D7'}
+[2026-02-20 21:54:14] [REASONING_LOOP] ERROR planning FILE_urgent_payment_followup_20260220_200710.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfqvrQCdVavmthCmn8D'}
+[2026-02-20 21:54:15] [REASONING_LOOP] ERROR planning LINKEDIN_POST_FILE_demo_meeting_notes_202602_20260219_010721.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfr2CcoL2Py1hKrSQKN'}
+[2026-02-20 21:54:16] [REASONING_LOOP] ERROR planning LINKEDIN_POST_meeting_notes_client_xyz_20260220_200707.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfr72aeL8zcNNv8jYfJ'}
+[2026-02-20 21:54:18] [REASONING_LOOP] ERROR planning LINKEDIN_POST_project_milestone_feb2026_20260219_151516.md: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CYKfrBYh41f1e2JHXbZnF'}
+[2026-02-20 21:58:21] [SILVER_ORCHESTRATOR] Silver Orchestrator stopped
+[2026-02-20 21:58:34] [INFO] FileSystemWatcher stopped

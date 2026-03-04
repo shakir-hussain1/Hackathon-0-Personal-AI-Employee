@@ -1,0 +1,11 @@
+URGENT: Payment Follow-up Required
+
+Client: XYZ Corporation
+Invoice: INV-2026-001-B
+Amount Overdue: Rs 25,000
+Due Since: 2026-02-10 (10 days overdue)
+
+Please contact accounts team immediately.
+Send payment reminder email to: accounts@xyzcorp.com
+
+This is time-sensitive — escalate if no response within 24 hours.
